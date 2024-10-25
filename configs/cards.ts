@@ -12,7 +12,7 @@ export const homeClients: Card[] = [
     name: "Euro Asia",
     category: "Asset management",
     description:
-      "Euro Asia Asset Management is an asset <br /> manager specializing in regulatory hosting for <br /> Venture funds and family offices in Singapore, with 700M USD Assets under Management.",
+      "Euro Asia Asset Management is an asset manager  <br /> specializing in regulatory hosting for Venture <br />  funds and family offices in Singapore, <br />  with 700M USD Assets under Management.",
     link: "https://euroasia-am.com",
   },
   {
@@ -39,28 +39,28 @@ export const homePortfolios: Card[][] = [
       logo: "/icons/ic_fryingfish.png",
       name: "Frying Fish Club",
       description:
-        "Fusion food restaurant chain with 5 outlets in 3 countries <br /> offering Japanese-inspired fish & chips, integrating NFTs",
+        "Fusion food restaurant chain with 5 outlets in 3 countries offering Japanese-inspired fish & chips, integrating NFTs",
       link: "https://fryingfish.club",
     },
     {
       logo: "/icons/ic_palinggaming.png",
       name: "Paling Gaming",
       description:
-        "Premium furniture manufacturer and brand based in <br /> Indonesia",
+        "Premium furniture manufacturer and brand based in Indonesia",
       link: "https://palinggaming.com",
     },
     {
       logo: "/icons/ic_bodynetic.png",
       name: "Bodynetic",
       description:
-        "A painless world with better lifestyles and accessible <br /> preventive solutions.",
+        "A painless world with better lifestyles and accessible preventive solutions.",
       link: "https://bodynetic.co",
     },
     {
       logo: "/icons/ic_aim.png",
       name: "Aim Production House",
       description:
-        "A creative agency in Bandung dedicated to empowering local <br /> talent and elevating the creative scene.",
+        "A creative agency in Bandung dedicated to empowering local talent and elevating the creative scene.",
       link: "https://aimph.co",
     },
   ],
@@ -69,7 +69,7 @@ export const homePortfolios: Card[][] = [
       logo: "/icons/ic_megacorp.png",
       name: "Megacorp Trading Card Game",
       description:
-        "A cyberpunk-themed card game that immerses players in a <br /> complex world of genetically modified beings, powerful psychics",
+        "A cyberpunk-themed card game that immerses players in a complex world of genetically modified beings, powerful psychics",
       link: "https://megacorptcg.com",
     },
   ],
@@ -96,7 +96,7 @@ export const homeWeb3: Card[] = [
 
 export const homePartners: Omit<Card, "logo" | "description" | "category">[] = [
   {
-    name: "Offchain global",
+    name: "OFFCHAIN GLOBAL",
     link: "https://offchain.social",
   },
   {

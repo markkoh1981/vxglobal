@@ -14,7 +14,7 @@ const [visible, container] = useVisible();
       >
         <div
           v-for="team in aboutUsTeams"
-          class="flex flex-col items-center space-y-2"
+          class="flex flex-col items-center space-y-4"
           :class="{
             'odd:animate-slide-in-left even:animate-slide-in-right': visible,
           }"
@@ -28,7 +28,7 @@ const [visible, container] = useVisible();
               class="w-40"
             />
           </div>
-          <div class="text-center">
+          <div class="flex flex-col space-y-2 text-center">
             <h1 class="text-sm md:text-base font-medium">{{ team.name }}</h1>
             <p class="text-xs md:text-sm text-white/75">{{ team.title }}</p>
           </div>

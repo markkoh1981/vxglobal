@@ -18,7 +18,7 @@ const [visible, container] = useVisible();
         <div>
           <h1 class="font-[Clash+Display] text-base font-bold">Purpose</h1>
         </div>
-        <p class="text-white/75 text-xs md:text-sm md:max-w-lg">
+        <p class="text-white/75 text-xs leading-relaxed  md:text-sm md:max-w-lg">
           VX GLOBAL is a holding entity for its own portfolio investments. Its
           key services includesxcels management consultancy, providing tailored
           solutions for market entry, capital sourcing and deployment for funds,

@@ -4,7 +4,7 @@ const [visible, container] = useVisible();
 </script>
 
 <template>
-  <div class="flex flex-col space-y-2 xl:w-7xl xl:self-center">
+  <div class="flex flex-col space-y-8 xl:w-7xl xl:self-center">
     <div class="px-4 md:px-8">
       <h1 class="text-base font-bold">Web 3.0</h1>
     </div>

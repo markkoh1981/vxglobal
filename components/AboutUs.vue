@@ -11,7 +11,7 @@ const [visible, container] = useVisible();
       <h1 class="font-[Clash+Display] text-base font-bold">About Us</h1>
     </div>
     <div class="flex">
-      <p class="text-white/75 text-xs md:text-sm md:max-w-xl">
+      <p class="text-white/75 text-xs leading-relaxed md:text-sm md:max-w-xl">
         Founded in 2011, VX GLOBAL began as a distribution company in the FMCG
         (Fast Moving Consumer Goods) segment in Singapore. <br />
         The company has since grown with its primary business pivoting to Fund

@@ -19,7 +19,7 @@ defineProps({
 </script>
 <template>
   <div
-    class="relative flex flex-col p-0.4"
+    class="h-full relative flex flex-col p-0.4"
   >
     <component
       :is="is"

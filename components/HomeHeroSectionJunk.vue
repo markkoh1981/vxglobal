@@ -5,23 +5,17 @@ const [visible, container] = useVisible();
   <div
     ref="container"
     :class="{ 'animate-slide-in-left': visible }"
-    class="absolute flex flex-col space-y-8 justify-end lt-xl:left-4 lt-xl:bottom-8 md:-bottom-24 lt-md:items-center md:px-8 xl:bottom-auto xl:top-10/22 xl:w-7xl xl:self-center"
+    class="absolute flex flex-col space-y-4 justify-end lt-xl:left-4 md:space-y-8 md:-bottom-8 lt-md:items-center md:px-8 xl  xl:w-7xl xl:self-center"
   >
-    <button class="flex items-center animate-slide-in-left">
+    <button class="flex items-center animate-slide-in-left md:space-x-2">
       <img
         src="~/assets/icons/ic_scroll.svg"
-        width="32"
-        height="32"
-        class="w-6 h-6 md:w-8 md:h-8"
+        width="24"
+        height="24"
+        class="lt-md:w-6 lt-md:h-6"
       />
-      <p>Scroll down</p>
+      <p class="text-xs md:text-base">Scroll Down</p>
     </button>
-    <img
-      src="/assets/illustrations/il_build_together.svg"
-      width="128"
-      height="128"
-      :class="{ 'animate-spin animate-duration-[60s]': visible }"
-      class="lt-md:h-24 lt-md:w-24"
-    />
+    <TextRotateJunk />
   </div>
 </template>

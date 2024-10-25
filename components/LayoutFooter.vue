@@ -8,7 +8,7 @@ const [visible, container] = useVisible();
 <template>
   <footer
     ref="container"
-    class="flex flex-col space-y-4 md:p-16 px-4 py-8"
+    class="flex flex-col space-y-8 md:px-16 px-4 py-16"
   >
     <div class="flex space-x-4">
       <div
@@ -21,14 +21,14 @@ const [visible, container] = useVisible();
           class="w-6 h-6 xl:w-12 xl:h-12"
           textClass="text-xl md:text-2xl"
         />
-        <div>
-          <p class="max-w-56 md:max-w-xs text-xs text-white/75 md:text-sm">
+        <div class="flex flex-col space-y-4">
+          <p class="max-w-56 leading-relaxed md:max-w-xs text-xs  md:text-sm">
             VX GLOBAL excels in management consultancy, providing tailored
             solutions for market entry, capital deployment for funds, deal flow
             and operational strategies.
           </p>
           <div class="flex items-center space-x-2">
-            <div class="i-mdi:email" />
+            <div class="i-mdi:email-outline text-base" />
             <p>mark@transendentconcepts.com</p>
           </div>
         </div>
@@ -69,10 +69,10 @@ const [visible, container] = useVisible();
     <div 
     :class="{ 'animate-slide-in-up': visible }"
 
-    class="flex flex-col space-y-2">
+    class="flex flex-col space-y-8">
       <hr class="border-white/50" />
       <div>
-        <p class="text-white/75">
+        <p class="text-white/50">
           Copyright © 2024 VX Global . All rights reserved
         </p>
       </div>

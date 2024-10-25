@@ -6,7 +6,7 @@ const [visible, container] = useVisible();
 <template>
   <div
     id="services"
-    class="relative flex flex-col space-y-2 xl:w-7xl xl:self-center"
+    class="relative flex flex-col space-y-8 xl:w-7xl xl:self-center"
   >
     <div class="text-base font-bold px-4 md:px-8">
       <h1>Advisory Clients</h1>
@@ -20,6 +20,7 @@ const [visible, container] = useVisible();
         v-for="client in homeClients"
         v-bind="client"
         link-class="ml-auto"
+        class="shrink-0 rounded-md"
         :class="{ 'lt-md:even:animate-slide-in-right lt-md:odd:animate-slide-in-left': visible }"
       />
     </div>
