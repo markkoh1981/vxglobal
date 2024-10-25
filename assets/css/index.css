@@ -1,0 +1,130 @@
+.bg-block {
+  background: url("/illustrations/il_block_bg.png") no-repeat right/41.5%;
+}
+
+@screen lt-md {
+  .bg-block {
+    background: url("/illustrations/il_block_bg.png") no-repeat right/50%;
+  }
+}
+
+@screen lt-md {
+  bg-bubble {
+    background: url("/illustrations/il_bubble.png") no-repeat left/70%;
+  }
+}
+
+.animate-marquee {
+  animation: linear 30s infinite marquee;
+}
+
+.animate-inverse-marquee {
+  animation: linear 30s infinite inverse-marquee;
+}
+
+.animate-none {
+  animation: none;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes inverse-marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+svg {
+  image-rendering: auto;
+}
+
+.bg-spiral-and-block {
+  background-image: url("/illustrations/il_spiral_bg.png"),
+    url("/illustrations/il_block_bg.png");
+  background-repeat: no-repeat;
+  background-position: top right, bottom right;
+  background-size: 100% 75%, 30% 35%;
+}
+
+@screen lt-md {
+  .bg-spiral-and-block {
+    background-image: url("/illustrations/il_spiral_bg.png"),
+      url("/illustrations/il_block_bg.png");
+    background-repeat: no-repeat;
+    background-position: top right, bottom right;
+    background-size: 100% 75%, 65% 35%;
+  }
+}
+
+.bg-bubble-transparent:last-child {
+  background: url("/illustrations/il_transparent_bubble_invert.png") no-repeat;
+  background-position: top left, top right;
+  background-size: 100% 100%;
+}
+
+.bg-bubble-transparent:first-child {
+  background: url("/illustrations/il_transparent_bubble.png") no-repeat;
+  background-position: top left, top right;
+  background-size: 100% 80%;
+}
+
+@screen md {
+  .bg-bubble {
+    background: url("/illustrations/il_bubble.png") no-repeat;
+    background-position: top left;
+    background-size: 45% 90%;
+  }
+}
+
+.bg-gradient {
+  background: url("/illustrations/il_gradient.png") no-repeat;
+  background-size: cover;
+}
+
+.bg-gradient-2 {
+  background: url("/illustrations/il_gradient_2.png") no-repeat;
+  background-size: cover;
+}
+
+.bg-belt {
+  background: url("/illustrations/il_belt.png") no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.bg-bubble-mirror {
+  background: url("/illustrations/il_bubble_2.png") no-repeat,
+    url("/illustrations/il_bubble_3.png") no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: 40% 80%, 40% 80%;
+}
+
+.bg-diamond {
+  background: url("/illustrations/il_diamond.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+* {
+  scrollbar-width: 0;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-appearance: none;
+}
