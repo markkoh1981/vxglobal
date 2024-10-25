@@ -13,6 +13,7 @@
           width="256"
           height="256"
           fit="inside"
+          alt="Coins"
           class="absolute right-0 w-1/2 w-1/2 object-contain"
         />
       </div>

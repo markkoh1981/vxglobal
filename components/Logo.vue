@@ -15,6 +15,7 @@ const props = defineProps<Props>();
   >
     <img
       v-bind="props"
+      alt="vxglobal"
       src="~/assets/icons/ic_vxglobal.svg"
       class="z-5"
     />

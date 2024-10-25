@@ -6,9 +6,9 @@ defineProps<Card & { linkClass?: string }>();
 
 <template>
   <CubeEffect
-    class="shrink-0 flex flex-col space-y-4 bg-primary text-black px-8 py-4 snap-center lt-md:min-w-xs max-w-xl"
+    class="shrink-0 flex flex-col space-y-2 md:space-y-4 bg-primary text-black px-8 py-4 snap-center lt-md:min-w-xs max-w-xl"
   >
-    <div class="flex-1 flex flex-col space-y-4">
+    <div class="flex-1 flex flex-col space-y-2 md:space-y-4">
       <div class="flex items-center space-x-2">
         <NuxtImg
           :src="logo"
@@ -25,7 +25,7 @@ defineProps<Card & { linkClass?: string }>();
         />
       </div>
     </div>
-    <div class="flex text-xs  py-2">
+    <div class="flex text-xs md:py-2">
       <NuxtLink
         :href="link"
         target="_blank"

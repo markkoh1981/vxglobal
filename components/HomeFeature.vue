@@ -14,6 +14,10 @@ const [visible, container] = useVisible();
       >
         <NuxtImg
           src="/illustrations/il_bubble.png"
+          alt="bubble"
+          width="256"
+          height="256"
+          fit='inside'
           class="absolute w-1/2 h-full"
         />
       </div>
@@ -64,8 +68,8 @@ const [visible, container] = useVisible();
       </div>
     </div>
     <div class="flex flex-col px-4 py-8">
-      <p class="text-xs capitalize text-center md:text-base">
-        VX GLOBAL offers a full spectrum of services to help businesses <br />
+      <p class="text-xs capitalize leading-relaxed text-center md:text-base">
+        VX GLOBAL offers a full spectrum of services to help businesses <br class="lt-md:hidden" />
         navigate the dynamic Asian market, ensuring sustainable success.
       </p>
     </div>

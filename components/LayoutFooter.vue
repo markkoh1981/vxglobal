@@ -10,7 +10,7 @@ const [visible, container] = useVisible();
     ref="container"
     class="flex flex-col space-y-8 md:px-16 px-4 py-16"
   >
-    <div class="flex space-x-4">
+    <div class="flex md:space-x-4">
       <div
         :class="{ 'animate-slide-in-down': visible }"
         class="flex-1 flex flex-col space-y-2"
