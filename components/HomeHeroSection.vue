@@ -24,7 +24,7 @@ defineProps<Props>();
       class="h-md flex flex-col items-center text-center space-y-4 lt-md:py-8 md:justify-center md:space-y-8 md:h-xl"
     >
       <div class="flex flex-col space-y-4">
-        <h1 class="text-2xl font-black md:text-4xl xl:text-6xl font-inter">
+        <h1 class="text-xl font-black md:text-4xl xl:text-6xl font-inter">
           Building a Strong Management <br />
           System Across the Globe 🌍️
         </h1>
