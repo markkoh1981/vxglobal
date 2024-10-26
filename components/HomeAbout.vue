@@ -27,8 +27,8 @@ const [visible, container] = useVisible();
         </p>
       </div>
       <div class="self-start flex flex-col">
-        <ButtonOutlineFill class="px-4 py-2 bg-primary/50 md:px-8 md:py-4">
-          <p class="text-white/70">Read more</p>
+        <ButtonOutlineFill class="bg-primary/50 md:px-8 md:py-4">
+          <p class="text-white/70 p-4">Read more</p>
         </ButtonOutlineFill>
       </div>
     </div>

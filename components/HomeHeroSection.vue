@@ -21,10 +21,10 @@ defineProps<Props>();
           visible ? 'animate-slide-in-right visible' : 'invisible'
         )
       "
-      class="h-md flex flex-col items-center text-center md:h-xl xl:h-3xl"
+      class="h-sm flex flex-col items-center text-center md:h-xl xl:h-3xl"
     >
-      <div class="flex flex-col h-sm justify-center items-center space-y-4 space-y-8">
-        <div class="flex flex-col space-y-4">
+      <div class="flex flex-col justify-center items-center space-y-4 md:space-y-8 md:h-sm">
+        <div class="flex flex-col md:space-y-4">
           <h1 class="text-xl font-black md:text-4xl xl:text-6xl font-inter">
             Building a Strong Management <br />
             System Across the Globe 🌍️

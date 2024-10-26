@@ -13,7 +13,7 @@ const [visible, container] = useVisible();
       <h1>Advisory Clients</h1>
     </div>
     <div
-      :class="visible ? 'md:animate-slide-in-up md:visible' : 'md:invisible'"
+      :class="visible ? 'animate-slide-in-up visible' : 'invisible'"
       class="flex gap-x-4 overflow-x-scroll snap-x px-4 xl:px-0"
     >
       <CubeCard
@@ -22,11 +22,6 @@ const [visible, container] = useVisible();
         link-class="ml-auto"
         class="shrink-0 rounded-md"
         style="--mask: url('/icons/ic_box_parallelogram.svg#mask')"
-        :class="
-          visible
-            ? 'lt-md:even:animate-slide-in-right lt-md:odd:animate-slide-in-left visible'
-            : 'invisible'
-        "
       />
     </div>
   </div>
