@@ -8,15 +8,11 @@ const [visible, container] = useVisible();
 <template>
   <footer
     ref="container"
-    class="flex flex-col space-y-8 md:px-16 px-4 py-16"
+    class="flex flex-col space-y-8 lt-xl:px-4 py-16 xl:w-7xl xl:self-center"
   >
     <div class="flex md:space-x-4">
       <div
-        :class="
-          visible
-            ? 'animate-slide-in-down visible'
-            : 'invisible'
-        "
+        :class="visible ? 'animate-slide-in-down visible' : 'invisible'"
         class="flex-1 flex flex-col space-y-2"
       >
         <Logo
@@ -26,10 +22,12 @@ const [visible, container] = useVisible();
           textClass="text-xl md:text-2xl"
         />
         <div class="flex flex-col space-y-4">
-          <p class="max-w-56 !leading-relaxed md:max-w-xs text-xs md:text-sm">
-            VX GLOBAL excels in management consultancy, providing tailored
-            solutions for market entry, capital deployment for funds, deal flow
-            and operational strategies.
+          <p
+            class="lt-md:max-w-56 !leading-relaxed md:max-w-auto text-xs md:text-sm"
+          >
+            VX GLOBAL excels in management consultancy, providing <br />
+            tailored solutions for market entry, capital deployment for <br />
+            funds, deal flow and operational strategies.
           </p>
           <div class="flex items-center space-x-2">
             <div class="i-mdi:email-outline text-base" />
@@ -38,11 +36,7 @@ const [visible, container] = useVisible();
         </div>
       </div>
       <div
-        :class="
-          visible
-            ? 'animate-slide-in-right visible'
-            : 'invisible'
-        "
+        :class="visible ? 'animate-slide-in-right visible' : 'invisible'"
         class="flex space-x-2 md:space-x-4"
       >
         <div class="flex flex-col space-y-4">

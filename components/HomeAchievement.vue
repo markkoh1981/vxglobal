@@ -12,7 +12,7 @@ const [visible, container] = useVisible();
       <div>
         <h1 class="text-base font-bold md:text-lg md:text-xl">Achievements</h1>
       </div>
-      <div class="border-t border-l border-gradient px-4 pt-2 max-w-xs md:max-w-md">
+      <div class="border-t border-l border-gradient px-4 py-4 max-w-sm md:min-w-xl md:max-w-auto">
         <p
           :class="visible ? 'animate-slide-in-up visible' : 'invisible'"
           class="text-xs !leading-relaxed md:text-sm"

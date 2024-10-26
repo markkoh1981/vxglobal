@@ -10,20 +10,9 @@ const [visible, container] = useVisible();
     >
       <div
         :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
-        class="flex-1 lt-md:hidden"
-      >
-        <NuxtImg
-          src="/illustrations/il_bubble.png"
-          alt="bubble"
-          width="256"
-          height="256"
-          fit="inside"
-          class="absolute w-1/2 h-full"
-        />
-      </div>
-      <div
-        class="flex-inline gap-4 px-4 z-10 md:max-w-xl xl:max-w-5xl md:self-end"
-      >
+        class="flex-1 bg-bubble lt-md:hidden"
+      />
+      <div class="flex gap-x-8 xl:gap-x-16 px-4 xl:px-16 z-10 md:self-center xl:-ml-32">
         <div
           v-for="(block, blockIndex) in homeFeatures"
           :key="blockIndex"
@@ -32,7 +21,7 @@ const [visible, container] = useVisible();
               ? 'lt-md:first:animate-slide-in-left lt-md:last:animate-slide-in-right lt-md:visible'
               : 'lt-md:invisible'
           "
-          class="grid grid-cols-1 gap-y-24 first:mb-24 last:mt-24 bg-bubble-transparent"
+          class="grid grid-cols-1 gap-y-16 md:gap-y-24 first:mb-24 last:mt-24 bg-bubble-transparent"
         >
           <div
             v-for="(feature, index) in block"
@@ -42,7 +31,7 @@ const [visible, container] = useVisible();
                 ? 'last:md:animate-slide-in-up first:md:animate-slide-in-down md:visible'
                 : 'md:invisible'
             "
-            class="flex flex-col space-y-4 max-w-sm py-4"
+            class="flex flex-col space-y-4 md:max-w-sm px-4 md:py-4"
           >
             <div>
               <ButtonFill class="px-6 py-1 text-xs md:text-sm md:px-8 md:py-2">
@@ -50,22 +39,22 @@ const [visible, container] = useVisible();
               </ButtonFill>
             </div>
             <div class="space-y-2">
-              <h1 class="text-sm font-bold text-nowrap capitalize md:text-lg">
+              <h1
+                class="text-sm font-bold text-nowrap capitalize md:text-base xl:text-2xl"
+              >
                 {{ feature.title }}
               </h1>
               <ul
                 v-for="(description, index) in feature.descriptions"
                 :key="index"
-                class="flex-1 flex flex-col px-2"
+                class="flex-1 flex flex-col md:px-2"
               >
-                <li
-                  class="text-xs !leading-relaxed list-disc md:text-sm xl:text-base"
-                >
+                <li class="text-xs !leading-relaxed list-disc md:text-sm">
                   {{ description }}
                 </li>
               </ul>
             </div>
-            <hr class=" border-primary" />
+            <hr class="border-primary" />
           </div>
         </div>
       </div>
@@ -74,7 +63,8 @@ const [visible, container] = useVisible();
       <p class="text-xs capitalize !leading-relaxed text-center md:text-base">
         VX GLOBAL offers a full spectrum of services to help businesses
         <br class="lt-md:hidden" />
-        navigate the dynamic Asian market, ensuring sustainable success.
+        navigate the dynamic Asian market ensuring
+        <span class="lt-md:hidden"> sustainable </span>success
       </p>
     </div>
   </section>

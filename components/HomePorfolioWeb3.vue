@@ -17,7 +17,7 @@ const [visible, container] = useVisible();
       <h1 class="text-base font-bold">Web 3.0</h1>
     </div>
     <div
-      class="flex flex-col gap-y-4 px-4 md:px-8 snap-x overflow-x-scroll md:grid md:grid-cols-2"
+      class="flex flex-col gap-y-4 px-4 md:px-8 snap-x overflow-x-scroll md:grid md:grid-cols-2 md:gap-16"
     >
       <CubeCard
         v-for="portfolio in homeWeb3"

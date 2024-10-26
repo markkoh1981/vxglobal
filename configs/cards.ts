@@ -12,7 +12,7 @@ export const homeClients: Card[] = [
     name: "Euro Asia",
     category: "Asset management",
     description:
-      "Euro Asia Asset Management is an asset manager  <br /> specializing in regulatory hosting for Venture <br />  funds and family offices in Singapore, <br />  with 700M USD Assets under Management.",
+      "Euro Asia Asset Management is an asset  <br /> manager specializing in regulatory hosting for <br /> Venture funds and family offices in Singapore, <br />  with 700M USD Assets under Management.",
     link: "https://euroasia-am.com",
   },
   {
@@ -20,7 +20,7 @@ export const homeClients: Card[] = [
     name: "Thxnet",
     category: "DevTools",
     description:
-      "A web3 company providing infrastructure <br /> and tools for efficient Web3 application <br /> development, allowing Enterprises to implement <nr /> a Layer 1 private chain with just a <br />few simple API calls.",
+      "A web3 company providing infrastructure <br /> and tools for efficient Web3 application <br /> development, allowing Enterprises to <br /> implement a Layer 1 private chain with just a <br />few simple API calls.",
     link: "https://thnet.org",
   },
   {
@@ -46,21 +46,21 @@ export const homePortfolios: Card[][] = [
       logo: "/icons/ic_palinggaming.png",
       name: "Paling Gaming",
       description:
-        "Premium furniture manufacturer and brand based in Indonesia",
+        "Premium furniture manufacturer and brand based in <br /> Indonesia",
       link: "https://palinggaming.com",
     },
     {
       logo: "/icons/ic_bodynetic.png",
       name: "Bodynetic",
       description:
-        "A painless world with better lifestyles and accessible preventive solutions.",
+        "A painless world with better lifestyles and accessible <br /> preventive solutions.",
       link: "https://bodynetic.co",
     },
     {
       logo: "/icons/ic_aim.png",
       name: "Aim Production House",
       description:
-        "A creative agency in Bandung dedicated to empowering local talent and elevating the creative scene.",
+        "A creative agency in Bandung dedicated to empowering local <br /> talent and elevating the creative scene.",
       link: "https://aimph.co",
     },
   ],
@@ -69,7 +69,7 @@ export const homePortfolios: Card[][] = [
       logo: "/icons/ic_megacorp.png",
       name: "Megacorp Trading Card Game",
       description:
-        "A cyberpunk-themed card game that immerses players in a complex world of genetically modified beings, powerful psychics",
+        "A cyberpunk-themed card game that immerses players in a <br /> complex world of genetically modified beings, powerful psychics",
       link: "https://megacorptcg.com",
     },
   ],
@@ -81,7 +81,7 @@ export const homeWeb3: Card[] = [
     name: "All.Art",
     category: "Tokenomics",
     description:
-      "A collective focusing on the tokenisation of Real World Assets, development of on-chain licensing infrastructure.",
+      "A collective focusing on the tokenisation of Real World Assets, <br /> development of on-chain licensing infrastructure.",
     link: "https://all.art",
   },
   {
@@ -89,7 +89,7 @@ export const homeWeb3: Card[] = [
     name: "Monstro",
     category: "Finance",
     description:
-      "A DeFi-focused company offering transparent yield farming through its Monstro's Farm program",
+      "A DeFi-focused company offering transparent yield farming <br /> through its Monstro's Farm program",
     link: "https://monstro.fun",
   },
 ];

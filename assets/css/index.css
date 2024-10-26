@@ -1,13 +1,3 @@
-.bg-block {
-  background: url("/illustrations/il_block_bg.png") no-repeat right/41.5%;
-}
-
-@screen lt-md {
-  .bg-block {
-    background: url("/illustrations/il_block_bg.png") no-repeat right/50%;
-  }
-}
-
 @screen lt-md {
   bg-bubble {
     background: url("/illustrations/il_bubble.png") no-repeat left/70%;
@@ -55,7 +45,7 @@ svg {
     url("/illustrations/il_block_bg.png");
   background-repeat: no-repeat;
   background-position: top right, bottom right;
-  background-size: 100% 75%, 30% 35%;
+  background-size: 100% 75%, 40% 40%;
 }
 
 @screen lt-md {
@@ -64,7 +54,7 @@ svg {
       url("/illustrations/il_block_bg.png");
     background-repeat: no-repeat;
     background-position: top right, bottom right;
-    background-size: 100% 75%, 65% 35%;
+    background-size: 100% 75%, 55% 35%;
   }
 
   .bg-bubble-transparent:last-child {
@@ -84,7 +74,7 @@ svg {
   .bg-bubble {
     background: url("/illustrations/il_bubble.png") no-repeat;
     background-position: top left;
-    background-size: 45% 90%;
+    background-size: 100% 100%;
   }
 }
 
@@ -117,6 +107,12 @@ svg {
   background-size: contain;
 }
 
+.bg-fluid-parallelogram {
+  background: url("/assets/icons/ic_fluid_parallogram.svg") no-repeat;
+  background-position: top right;
+  background-size: 100% 100%;
+}
+
 *::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -138,4 +134,14 @@ svg {
     )
     1;
   border-image-slice: 1 0 0 1;
+}
+
+.bg-small-parallelogram {
+  --mask: url("/icons/ic_small_parallelogram.svg#mask");
+}
+
+@screen lt-md {
+  .bg-small-parallelogram {
+    --mask: url("/icons/ic_small_parallelogram_outline.svg#mask");
+  }
 }

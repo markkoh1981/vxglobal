@@ -6,14 +6,15 @@ defineProps<Card & { linkClass?: string }>();
 
 <template>
   <CubeEffect
-    class="shrink-0 flex flex-col space-y-2 md:space-y-4 bg-primary text-black px-8 py-4 snap-center lt-md:min-w-xs max-w-lg"
+    class="shrink-0 flex flex-col space-y-2 md:space-y-4 bg-primary text-black px-8 py-4 snap-center"
   >
     <div class="flex-1 flex flex-col space-y-2 md:space-y-4">
       <div class="flex items-center space-x-2">
         <NuxtImg
           :src="logo"
-          width="56"
-          height="56"
+          width="40"
+          height="40"
+          fit="inside"
           class="lt-md:w-10 lt-md:h-10 rounded-full"
         />
         <p class="text-sm font-bold md:text-base xl:text-xl">{{ name }}</p>

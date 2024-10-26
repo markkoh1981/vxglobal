@@ -7,6 +7,8 @@ const [visible, container] = useVisible();
     id="portfolio"
     ref="container"
     class="relative flex flex-col space-y-8 bg-bubble-mirror"
+    style="--mask: url('/icons/ic_plain_parallelogram.svg#mask')"
+
   >
     <div class="flex flex-col space-y-8 px-4 md:px-8 xl:w-7xl xl:self-center">
       <div
@@ -29,7 +31,7 @@ const [visible, container] = useVisible();
       <div class="flex flex-col space-y-4 md:space-y-8">
         <div
           v-for="block in homePortfolios"
-          class="shrink-0 grid grid-cols-1 gap-y-4 lt-md:justify-center lt-md:items-center md:grid-cols-2 md:gap-4 last:md:flex last:md:items-center last:md:justify-center"
+          class="shrink-0 grid grid-cols-1 gap-y-4 lt-md:justify-center lt-md:items-center md:grid-cols-2 md:gap-16 last:md:flex last:md:items-center last:md:justify-center"
         >
           <CubeCard
             v-for="portfolio in block"
