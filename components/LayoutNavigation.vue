@@ -15,22 +15,22 @@ onClickOutside(navigation, () => (open.value = false));
   >
     <div
       ref="navigation"
-      class="flex lt-md:flex-col lt-md:space-y-8 lt-md:bg-stone-950 p-2 w-full lt-md:h-sm mx-auto rounded-md"
+      class="flex lt-md:flex-col lt-md:space-y-8 lt-md:bg-[#101010] p-2 w-full lt-md:h-sm mx-auto rounded-xl"
       :class="
-        open ? 'lt-md:animate-slide-in-down animate-duration-100' : 'lt-md:animate-slide-in-up'
+        open ? 'lt-md:animate-slide-in-down lt-md:!animate-duration-150' : 'lt-md:animate-slide-in-up'
       "
     >
       <div class="flex lt-md:flex-col md:flex-1">
         <header class="flex items-center p-2 md:hidden">
           <div class="flex-1">
             <Logo
-              class="w-6 h-6"
-              text-class="text-base"
+              class="w-8 h-8"
+              text-class="text-sm md:text-base"
             />
           </div>
           <div>
             <ButtonFill
-              class="px-4 py-1"
+              class="px-6 py-1.5"
               @click="open = false"
             >
               <p class="text-black">Close</p>
@@ -53,7 +53,7 @@ onClickOutside(navigation, () => (open.value = false));
           v-for="social in layoutSocials"
           target="_blank"
           :href="social.link"
-          class="bg-stone-700 p-1 rounded border border-stone-500"
+          class=" p-1.5 rounded border border-white/40 bg-white/10"
         >
           <div
             :class="social.icon"

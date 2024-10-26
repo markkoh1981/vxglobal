@@ -34,10 +34,10 @@ defineProps<Props>();
         </p>
       </div>
       <div class="flex space-x-2 text-xs">
-        <ButtonFill class="px-8 py-3 md:px-8 md:py-4">
+        <ButtonFill class="px-8 py-2 md:px-8 md:py-4">
           <p class="text-black text-nowrap">Book a call</p>
         </ButtonFill>
-        <ButtonOutline class="shrink-0 px-8 py-4 md:px-8 md:py-4">
+        <ButtonOutline class="shrink-0 px-4 py-3.5 md:px-8 md:py-4">
           <p class="text-white/70 text-nowrap">Send Us A Message</p>
         </ButtonOutline>
       </div>

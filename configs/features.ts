@@ -17,7 +17,7 @@ export const homeFeatures: Feature[][] = [
     {
       index: 3,
 
-      title: "Business matching",
+      title: "Priviledged network",
       descriptions: [
         "Access to reciprocal network to connect venture fund clients with",
         "Institutional investors (e.g, sovereign wealth funds, pension funds)",
@@ -29,7 +29,7 @@ export const homeFeatures: Feature[][] = [
   [
     {
       index: 2,
-      title: "Partnership development",
+      title: "Dealflow sourcing",
       descriptions: [
         "Proprietary deal flow from local network, specifically in Gaming, Web3 sectors",
         "Targeted outreach to startups and growth-stage companies within this focus.",

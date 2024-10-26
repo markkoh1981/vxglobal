@@ -128,3 +128,14 @@ svg {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-appearance: none;
 }
+
+.border-gradient {
+  border-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.25) 100%
+    )
+    1;
+  border-image-slice: 1 0 0 1;
+}

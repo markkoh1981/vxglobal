@@ -42,7 +42,7 @@ const [visible, container] = useVisible();
                 ? 'last:md:animate-slide-in-up first:md:animate-slide-in-down md:visible'
                 : 'md:invisible'
             "
-            class="flex flex-col space-y-4 max-w-sm border-b py-4 border-primary"
+            class="flex flex-col space-y-4 max-w-sm py-4"
           >
             <div>
               <ButtonFill class="px-6 py-1 text-xs md:text-sm md:px-8 md:py-2">
@@ -50,7 +50,7 @@ const [visible, container] = useVisible();
               </ButtonFill>
             </div>
             <div class="space-y-2">
-              <h1 class="font-bold capitalize md:text-lg">
+              <h1 class="text-sm font-bold text-nowrap capitalize md:text-lg">
                 {{ feature.title }}
               </h1>
               <ul
@@ -65,6 +65,7 @@ const [visible, container] = useVisible();
                 </li>
               </ul>
             </div>
+            <hr class=" border-primary" />
           </div>
         </div>
       </div>

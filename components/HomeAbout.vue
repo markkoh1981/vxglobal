@@ -11,12 +11,13 @@ const [visible, container] = useVisible();
       class="flex flex-col space-y-4 z-10 px-4 lt-xl:max-w-sm lt-xl:max-w-md md:px-8 md:space-y-4 xl:w-7xl xl:self-center"
     >
       <div
-        class="!leading-relaxed text-xs lt-md:max-w-56 md:max-w-sm md:text-sm xl:text-base"
+        class="!leading-relaxed text-xs lt-md:max-w-64 md:max-w-sm md:text-sm xl:text-base"
       >
         <p>
-          Founded in 2011, we began as a distribution company. The company has
-          since grown with its primary business pivoting to Fund services and
-          portfolio management, it is also involved in the acceleration of
+          Founded in 2011, we began as a distribution company. The company
+          <br />
+          has since grown with its primary business pivoting to Fund services
+          and portfolio management, it is also involved in the acceleration of
           startups across Southeast Asia.
         </p>
       </div>

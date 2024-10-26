@@ -4,7 +4,7 @@ const [visible, container] = useVisible();
 <template>
   <div
     ref="container"
-    class="relative flex bg-gradient overflow-y-hidden bg-pink"
+    class="relative flex bg-gradient overflow-y-hidden"
   >
     <div
       class="flex-1 flex flex-col space-y-2 px-4 pr-8 py-8 md:px-8 xl:max-w-7xl xl:m-auto"
@@ -12,7 +12,7 @@ const [visible, container] = useVisible();
       <div>
         <h1 class="text-base font-bold md:text-lg md:text-xl">Achievements</h1>
       </div>
-      <div class="border-t border-l px-4 pt-2 md:max-w-md">
+      <div class="border-t border-l border-gradient px-4 pt-2 max-w-xs md:max-w-md">
         <p
           :class="visible ? 'animate-slide-in-up visible' : 'invisible'"
           class="text-xs !leading-relaxed md:text-sm"
@@ -32,7 +32,7 @@ const [visible, container] = useVisible();
         alt="galaxy"
         width="256"
         height="256"
-        class="lt-md:h-36"
+        class="lt-md:w-32 lt-md:h-32"
       />
     </div>
   </div>
