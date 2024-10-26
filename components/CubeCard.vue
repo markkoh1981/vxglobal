@@ -6,7 +6,7 @@ defineProps<Card & { linkClass?: string }>();
 
 <template>
   <CubeEffect
-    class="shrink-0 flex flex-col space-y-2 md:space-y-4 bg-primary text-black px-8 py-4 snap-center lt-md:min-w-xs max-w-xl"
+    class="shrink-0 flex flex-col space-y-2 md:space-y-4 bg-primary text-black px-8 py-4 snap-center lt-md:min-w-xs max-w-lg"
   >
     <div class="flex-1 flex flex-col space-y-2 md:space-y-4">
       <div class="flex items-center space-x-2">
@@ -20,7 +20,7 @@ defineProps<Card & { linkClass?: string }>();
       </div>
       <div class="flex-1">
         <p
-          class="text-xs leading-relaxed md:text-sm"
+          class="text-xs !leading-relaxed md:text-sm"
           v-html="description"
         />
       </div>

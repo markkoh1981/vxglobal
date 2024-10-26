@@ -12,7 +12,11 @@ const [visible, container] = useVisible();
   >
     <div class="flex md:space-x-4">
       <div
-        :class="{ 'animate-slide-in-down': visible }"
+        :class="
+          visible
+            ? 'animate-slide-in-down visible'
+            : 'invisible'
+        "
         class="flex-1 flex flex-col space-y-2"
       >
         <Logo
@@ -22,7 +26,7 @@ const [visible, container] = useVisible();
           textClass="text-xl md:text-2xl"
         />
         <div class="flex flex-col space-y-4">
-          <p class="max-w-56 leading-relaxed md:max-w-xs text-xs  md:text-sm">
+          <p class="max-w-56 !leading-relaxed md:max-w-xs text-xs md:text-sm">
             VX GLOBAL excels in management consultancy, providing tailored
             solutions for market entry, capital deployment for funds, deal flow
             and operational strategies.
@@ -34,7 +38,11 @@ const [visible, container] = useVisible();
         </div>
       </div>
       <div
-        :class="{ 'animate-slide-in-right': visible }"
+        :class="
+          visible
+            ? 'animate-slide-in-right visible'
+            : 'invisible'
+        "
         class="flex space-x-2 md:space-x-4"
       >
         <div class="flex flex-col space-y-4">
@@ -66,10 +74,10 @@ const [visible, container] = useVisible();
         </div>
       </div>
     </div>
-    <div 
-    :class="{ 'animate-slide-in-up': visible }"
-
-    class="flex flex-col space-y-8">
+    <div
+      :class="visible ? 'animate-slide-in-up visible' : 'invisible'"
+      class="flex flex-col space-y-8"
+    >
       <hr class="border-white/50" />
       <div>
         <p class="text-white/50">

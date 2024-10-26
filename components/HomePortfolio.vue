@@ -10,11 +10,17 @@ const [visible, container] = useVisible();
   >
     <div class="flex flex-col space-y-8 px-4 md:px-8 xl:w-7xl xl:self-center">
       <div
-        :class="{ 'animate-slide-in-down': visible }"
+        :class="
+          visible
+            ? 'animate-slide-in-down visible'
+            : 'invisible'
+        "
         class="flex flex-col space-y-4"
       >
-        <h1 class="text-base font-bold md:text-lg xl:text-xl">Our Portofolio</h1>
-        <p class="text-xs leading-relaxed  md:text-sm">
+        <h1 class="text-base font-bold md:text-lg xl:text-xl">
+          Our Portofolio
+        </h1>
+        <p class="text-xs !leading-relaxed md:text-sm">
           VX GLOBAL has made targeted investments in three categories. Brick and
           mortar retails, Web2 <br class="lt-md:hidden" />
           Foodtech, Deeptech. Finally in Web3, Gamefi, Depin and Defi.
@@ -28,9 +34,11 @@ const [visible, container] = useVisible();
           <CubeCard
             v-for="portfolio in block"
             v-bind="portfolio"
-            :class="{
-              'odd:animate-slide-in-left even:animate-slide-in-right': visible,
-            }"
+            :class="
+              visible
+                ? 'odd:animate-slide-in-left even:animate-slide-in-right visible'
+                : 'invisible'
+            "
           />
         </div>
       </div>

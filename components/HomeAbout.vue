@@ -7,11 +7,11 @@ const [visible, container] = useVisible();
     class="relative flex flex-col lt-md:pb-24 md:relative md:py-24"
   >
     <div
-      :class="{ 'animate-slide-in-left': visible }"
+      :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
       class="flex flex-col space-y-4 z-10 px-4 lt-xl:max-w-sm lt-xl:max-w-md md:px-8 md:space-y-4 xl:w-7xl xl:self-center"
     >
       <div
-        class="leading-relaxed text-xs lt-md:max-w-56 md:max-w-sm md:text-sm xl:text-base"
+        class="!leading-relaxed text-xs lt-md:max-w-56 md:max-w-sm md:text-sm xl:text-base"
       >
         <p>
           Founded in 2011, we began as a distribution company. The company has

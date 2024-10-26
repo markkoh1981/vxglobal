@@ -9,11 +9,18 @@ type Props = {
 defineProps<Props>();
 </script>
 <template>
-  <div class="flex-1 relative flex flex-col lt-xl:relative">
+  <div
+    ref="container"
+    class="flex-1 relative flex flex-col lt-xl:relative"
+  >
     <div class="absolute inset-0 bg-black/50 blur-3xl" />
     <div
-      ref="container"
-      :class="clsx(className, { 'animate-slide-in-right': visible })"
+      :class="
+        clsx(
+          className,
+          visible ? 'animate-slide-in-right visible' : 'invisible'
+        )
+      "
       class="h-md flex flex-col items-center text-center space-y-4 lt-md:py-8 md:justify-center md:space-y-8 md:h-xl"
     >
       <div class="flex flex-col space-y-4">
@@ -21,7 +28,7 @@ defineProps<Props>();
           Building a Strong Management <br />
           System Across the Globe 🌍️
         </h1>
-        <p class="text-xs leading-relaxed md:text-sm xl:text-base">
+        <p class="text-xs !leading-relaxed md:text-sm xl:text-base">
           Elevate your company with creatives that consistently out <br />
           perform your competitors, setting your brand apart.
         </p>

@@ -15,9 +15,9 @@ onClickOutside(navigation, () => (open.value = false));
   >
     <div
       ref="navigation"
-      class="flex lt-md:flex-col lt-md:space-y-8 lt-md:bg-stone-950 p-2 w-full lt-md:h-sm mx-auto animate-duration-150 rounded-md"
+      class="flex lt-md:flex-col lt-md:space-y-8 lt-md:bg-stone-950 p-2 w-full lt-md:h-sm mx-auto rounded-md"
       :class="
-        open ? 'lt-md:animate-slide-in-down' : 'lt-md:animate-slide-in-up'
+        open ? 'lt-md:animate-slide-in-down animate-duration-100' : 'lt-md:animate-slide-in-up'
       "
     >
       <div class="flex lt-md:flex-col md:flex-1">
@@ -38,7 +38,7 @@ onClickOutside(navigation, () => (open.value = false));
           </div>
         </header>
         <div
-          class="flex lt-md:flex-col md:flex-1 md:items-center md:justify-center md:space-x-2"
+          class="flex z-10 lt-md:flex-col md:flex-1 md:items-center md:justify-center md:space-x-2"
         >
           <LayoutNavigationItem
             v-for="(navigation, index) in layoutNavigations"

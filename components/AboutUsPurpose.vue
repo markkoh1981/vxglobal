@@ -7,18 +7,18 @@ const [visible, container] = useVisible();
     class="flex flex"
   >
     <div
-      :class="{ 'animate-slide-in-left': visible }"
+      :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
       class="flex-1 bg-diamond lt-md:hidden"
     />
     <div
-      :class="{ 'animate-slide-in-right': visible }"
+      :class="visible ? 'animate-slide-in-right visible' : 'invisible'"
       class="flex xl:w-5xl"
     >
       <div class="ml-auto flex flex-col space-y-2 px-4 md:px-8 md:py-16">
         <div>
           <h1 class="font-[Clash+Display] text-base font-bold">Purpose</h1>
         </div>
-        <p class="text-white/75 text-xs leading-relaxed  md:text-sm md:max-w-lg">
+        <p class="text-white/75 text-xs !leading-relaxed  md:text-sm md:max-w-lg">
           VX GLOBAL is a holding entity for its own portfolio investments. Its
           key services includesxcels management consultancy, providing tailored
           solutions for market entry, capital sourcing and deployment for funds,

@@ -4,10 +4,10 @@ const [visible, container] = useVisible();
 <template>
   <div
     ref="container"
-    :class="{ 'animate-slide-in-left': visible }"
-    class="absolute bottom-0 flex flex-col space-y-4 justify-end lt-xl:left-4 md:space-y-8 md:-bottom-8 lt-md:items-center md:px-8 xl  xl:w-7xl xl:self-center"
+    :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
+    class="absolute bottom-0 flex flex-col space-y-4 justify-end lt-xl:left-4 md:space-y-8 md:-bottom-8 lt-md:items-center md:px-8 xl xl:w-7xl xl:self-center"
   >
-    <button class="flex items-center animate-slide-in-left md:space-x-2">
+    <button class="flex items-center md:space-x-2">
       <img
         src="~/assets/icons/ic_scroll.svg"
         width="24"

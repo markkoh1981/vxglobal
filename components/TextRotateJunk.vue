@@ -12,7 +12,7 @@
       width="128"
       height="128"
       alt="Let build together"
-      class="animate-spin animate-duration-[30s] lt-md:w-16 lt-md:h-16"
+      class="animate-spin animate-duration-[20s] lt-md:w-16 lt-md:h-16"
     />
   </div>
 </template>

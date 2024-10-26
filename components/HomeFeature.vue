@@ -9,7 +9,7 @@ const [visible, container] = useVisible();
       class="flex-1 relative flex space-y-8"
     >
       <div
-        :class="{ 'animate-slide-in-left': visible }"
+        :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
         class="flex-1 lt-md:hidden"
       >
         <NuxtImg
@@ -17,7 +17,7 @@ const [visible, container] = useVisible();
           alt="bubble"
           width="256"
           height="256"
-          fit='inside'
+          fit="inside"
           class="absolute w-1/2 h-full"
         />
       </div>
@@ -27,19 +27,21 @@ const [visible, container] = useVisible();
         <div
           v-for="(block, blockIndex) in homeFeatures"
           :key="blockIndex"
-          :class="{
-            'lt-md:first:animate-slide-in-left lt-md:last:animate-slide-in-right':
-              visible,
-          }"
+          :class="
+            visible
+              ? 'lt-md:first:animate-slide-in-left lt-md:last:animate-slide-in-right lt-md:visible'
+              : 'lt-md:invisible'
+          "
           class="grid grid-cols-1 gap-y-24 first:mb-24 last:mt-24 bg-bubble-transparent"
         >
           <div
             v-for="(feature, index) in block"
             :key="index"
-            :class="{
-              'last:md:animate-slide-in-up first:md:animate-slide-in-down':
-                visible,
-            }"
+            :class="
+              visible
+                ? 'last:md:animate-slide-in-up first:md:animate-slide-in-down md:visible'
+                : 'md:invisible'
+            "
             class="flex flex-col space-y-4 max-w-sm border-b py-4 border-primary"
           >
             <div>
@@ -57,7 +59,7 @@ const [visible, container] = useVisible();
                 class="flex-1 flex flex-col px-2"
               >
                 <li
-                  class="text-xs leading-relaxed list-disc md:text-sm xl:text-base"
+                  class="text-xs !leading-relaxed list-disc md:text-sm xl:text-base"
                 >
                   {{ description }}
                 </li>
@@ -68,8 +70,9 @@ const [visible, container] = useVisible();
       </div>
     </div>
     <div class="flex flex-col px-4 py-8">
-      <p class="text-xs capitalize leading-relaxed text-center md:text-base">
-        VX GLOBAL offers a full spectrum of services to help businesses <br class="lt-md:hidden" />
+      <p class="text-xs capitalize !leading-relaxed text-center md:text-base">
+        VX GLOBAL offers a full spectrum of services to help businesses
+        <br class="lt-md:hidden" />
         navigate the dynamic Asian market, ensuring sustainable success.
       </p>
     </div>

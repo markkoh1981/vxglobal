@@ -4,22 +4,29 @@ const [visible, container] = useVisible();
 </script>
 
 <template>
-  <div class="flex flex-col space-y-8 xl:w-7xl xl:self-center">
+  <div
+    ref="container"
+    :class="
+      visible
+        ? 'md:animate-slide-in-up md:visible'
+        : 'md:invisible'
+    "
+    class="flex flex-col space-y-8 xl:w-7xl xl:self-center"
+  >
     <div class="px-4 md:px-8">
       <h1 class="text-base font-bold">Web 3.0</h1>
     </div>
     <div
-      ref="container"
-      :class="{ 'md:animate-slide-in-up': visible }"
       class="flex flex-col gap-y-4 px-4 md:px-8 snap-x overflow-x-scroll md:grid md:grid-cols-2"
     >
       <CubeCard
         v-for="portfolio in homeWeb3"
         v-bind="portfolio"
-        :class="{
-          'lt-md:odd:animate-slide-in-left lt-md:even:animate-slide-in-right':
-            visible,
-        }"
+        :class="
+          visible
+            ? 'lt-md:odd:animate-slide-in-left lt-md:even:animate-slide-in-right lt-md:visible'
+            : 'lt-md:invisible'
+        "
       />
     </div>
   </div>

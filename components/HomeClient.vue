@@ -5,6 +5,7 @@ const [visible, container] = useVisible();
 
 <template>
   <div
+    ref="container"
     id="services"
     class="relative flex flex-col space-y-8 xl:w-7xl xl:self-center"
   >
@@ -12,8 +13,11 @@ const [visible, container] = useVisible();
       <h1>Advisory Clients</h1>
     </div>
     <div
-      ref="container"
-      :class="{'md:animate-slide-in-up': visible}"
+      :class="
+        visible
+          ? 'md:animate-slide-in-up md:visible'
+          : 'md:invisible'
+      "
       class="flex gap-x-4 overflow-x-scroll snap-x px-4 md:px-8"
     >
       <CubeCard
@@ -21,7 +25,11 @@ const [visible, container] = useVisible();
         v-bind="client"
         link-class="ml-auto"
         class="shrink-0 rounded-md"
-        :class="{ 'lt-md:even:animate-slide-in-right lt-md:odd:animate-slide-in-left': visible }"
+        :class="
+          visible
+            ? 'lt-md:even:animate-slide-in-right lt-md:odd:animate-slide-in-left visible'
+            : 'invisible'
+        "
       />
     </div>
   </div>

@@ -5,7 +5,7 @@ const [visible, container] = useVisible();
 <template>
   <header
     ref="container"
-    :class="{ 'animate-slide-in-down': visible }"
+    :class="visible ?  'animate-slide-in-down visible' : 'invisible'"
     class="flex items-center bg-gradient-to-r from-black/5 to-black px-4 py-2 md:px-8 xl:w-7xl xl:self-center"
   >
     <div class="z-10">

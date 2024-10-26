@@ -4,7 +4,11 @@ export const useVisible = (container?: Ref<HTMLElement | null>) => {
 
   const { stop } = useIntersectionObserver(
     element,
-    ([{ isIntersecting }]) => (visible.value = isIntersecting)
+    useDebounceFn(([{ isIntersecting }]) => {
+      visible.value = isIntersecting;
+
+      if (isIntersecting) return stop();
+    })
   );
 
   onUnmounted(stop);
