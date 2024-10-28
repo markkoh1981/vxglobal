@@ -17,7 +17,7 @@ defineProps({
 
 <style scoped>
 .box {
-  clip-path: polygon(
+  --mask: polygon(
     20% 0%,
     88% 0,
     100% 22%,
@@ -27,12 +27,14 @@ defineProps({
     0 73%,
     0 0
   );
+  clip-path: var(--mask);
+  -webkit-clip-path: var(--mask);
 }
-
 
 @screen md {
   .box {
     clip-path: var(--mask);
+    -webkit-clip-path: var(--mask);
   }
 }
 </style>

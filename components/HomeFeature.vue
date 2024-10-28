@@ -12,7 +12,7 @@ const [visible, container] = useVisible();
         :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
         class="flex-1 p-12 bg-bubble lt-xl:absolute lt-xl:inset-0 lt-lg:hidden"
       />
-      <div class="flex gap-x-8 px-4 xl:px-16 z-10 xl:gap-x-16 xl:-ml-32">
+      <div class="flex gap-x-8 px-4 z-10 xl:px-16  xl:gap-x-16 xl:-ml-32">
         <div
           v-for="(block, blockIndex) in homeFeatures"
           :key="blockIndex"
