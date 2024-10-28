@@ -22,7 +22,7 @@ useSeoMeta({
 </script>
 <template>
   <div
-    class="fixed inset-0 flex flex-col font-sans bg-black text-white lt-sm:text-xs text-sm overflow-y-scroll overflow-x-hidden"
+    class="fixed inset-0 flex flex-col font-sans bg-black text-white text-sm md:text-lg xl:text-xl overflow-y-scroll overflow-x-hidden"
   >
     <NuxtPage class="overflow-y-scroll"/>
   </div>

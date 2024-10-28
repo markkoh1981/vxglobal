@@ -31,7 +31,7 @@ const [visible, container] = useVisible();
                 ? 'last:md:animate-slide-in-up first:md:animate-slide-in-down md:visible'
                 : 'md:invisible'
             "
-            class="flex flex-col space-y-4 xl:max-w-sm px-4 md:py-4"
+            class="flex flex-col space-y-4 xl:max-w-xl px-4 md:py-4"
           >
             <div>
               <ButtonFill class="px-6 py-1 text-xs md:text-sm md:px-8 md:py-2">
@@ -50,7 +50,7 @@ const [visible, container] = useVisible();
                 class="flex-1 flex flex-col md:px-2"
               >
                 <li
-                  class="text-xs !leading-relaxed list-disc md:text-sm"
+                  class="!leading-relaxed list-disc"
                   v-html="description"
                 />
               </ul>
@@ -61,7 +61,7 @@ const [visible, container] = useVisible();
       </div>
     </div>
     <div class="flex flex-col px-4 py-8">
-      <p class="text-xs capitalize !leading-relaxed text-center md:text-base">
+      <p class="capitalize !leading-relaxed text-center">
         VX GLOBAL offers a full spectrum of services to help businesses
         <br class="lt-md:hidden" />
         navigate the dynamic Asian market ensuring

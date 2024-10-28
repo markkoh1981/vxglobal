@@ -11,7 +11,7 @@ const [visible, container] = useVisible();
       class="flex flex-col space-y-4 z-10 px-4 md:px-8 md:space-y-4 xl:w-7xl xl:self-center"
     >
       <div
-        class="!leading-relaxed text-xs lt-md:max-w-56 md:max-w-auto sm:text-sm xl:text-base"
+        class="!leading-relaxed  lt-md:max-w-56 md:max-w-auto"
       >
         <p>
           Founded in 2011, VX GLOBAL began as a distribution company in

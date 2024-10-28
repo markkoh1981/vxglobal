@@ -29,12 +29,12 @@ defineProps<Props>();
             Building a Strong Management <br />
             System Across the Globe 🌍️
           </h1>
-          <p class="text-xs !leading-relaxed md:text-sm xl:text-base">
+          <p class="!leading-relaxed">
             Elevate your company with creatives that consistently out <br />
             perform your competitors, setting your brand apart.
           </p>
         </div>
-        <div class="flex space-x-2 text-xs">
+        <div class="flex space-x-2 text-base">
           <ButtonFill class="p-4">
             <p class="text-black p-1 capitalize">Book A Session With Us</p>
           </ButtonFill>

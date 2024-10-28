@@ -19,11 +19,6 @@ export default defineConfig({
     colors: {
       primary: "#A3A3A3",
     },
-    fontSize: {
-      xs: "0.8rem",
-      sm: "1rem",
-      base: "1.25rem",
-    },
   },
   safelist: [
     "i-fa-brands:linkedin-in",

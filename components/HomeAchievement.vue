@@ -10,12 +10,12 @@ const [visible, container] = useVisible();
       class="flex-1 flex flex-col space-y-2 px-4 pr-8 py-8 md:px-8 xl:max-w-7xl xl:m-auto"
     >
       <div>
-        <h1 class="text-base font-bold md:text-lg md:text-xl">Achievements</h1>
+        <h1 class="text-base font-bold md:text-xl md:text-2xl">Achievements</h1>
       </div>
-      <div class="border-t border-l border-gradient px-4 py-4 max-w-sm md:min-w-xl md:max-w-auto">
+      <div class="border-t border-l border-gradient px-4 py-4 max-w-sm md:min-w-xl xl:min-w-2xl xl:max-w-auto">
         <p
           :class="visible ? 'animate-slide-in-up visible' : 'invisible'"
-          class="text-xs !leading-relaxed md:text-sm"
+          class="!leading-relaxed"
         >
           VX GLOBAL has made positive impact for its clients and
           <br class="lt-md:hidden" />

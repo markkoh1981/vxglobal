@@ -14,10 +14,10 @@ const [visible, container] = useVisible();
         :class="visible ? 'animate-slide-in-down visible' : 'invisible'"
         class="flex flex-col space-y-4"
       >
-        <h1 class="text-base font-bold md:text-lg xl:text-xl">
+        <h1 class="text-base font-bold md:text-lg xl:text-2xl">
           Our Portofolio
         </h1>
-        <p class="text-xs !leading-relaxed md:text-sm">
+        <p class="!leading-relaxed">
           VX GLOBAL has made targeted investments in three categories. Brick and
           mortar retails, Web2 <br class="lt-md:hidden" />
           Foodtech, Deeptech. Finally in Web3, Gamefi, Depin and Defi.

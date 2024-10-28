@@ -22,9 +22,7 @@ const [visible, container] = useVisible();
           textClass="text-xl md:text-2xl"
         />
         <div class="flex flex-col space-y-4">
-          <p
-            class="lt-md:max-w-56 !leading-relaxed md:max-w-auto text-xs md:text-sm"
-          >
+          <p class="lt-md:max-w-56 !leading-relaxed md:max-w-auto">
             VX GLOBAL excels in management consultancy, providing <br />
             tailored solutions for market entry, capital deployment for <br />
             funds, deal flow and operational strategies.
@@ -47,7 +45,7 @@ const [visible, container] = useVisible();
             <NuxtLink
               v-for="navigation in layoutNavigations"
               :href="navigation.link"
-              class="py-2 text-xs text-white/75 md:text-sm hover:text-white text-nowrap"
+              class="py-2 text-white/75 hover:text-white text-nowrap"
               >{{ navigation.name }}</NuxtLink
             >
           </div>
@@ -61,7 +59,7 @@ const [visible, container] = useVisible();
               v-for="navigation in layoutSocials"
               :href="navigation.link"
               target="_blank"
-              class="py-2 text-xs text-white/75 md:text-sm hover:text-white"
+              class="py-2 text-white/75 hover:text-white"
               >{{ navigation.name }}</NuxtLink
             >
           </div>

@@ -21,7 +21,7 @@ defineProps<Card & { linkClass?: string }>();
       </div>
       <div class="flex-1">
         <p
-          class="text-xs !leading-relaxed md:text-sm"
+          class="text-xs !leading-relaxed md:text-base"
           v-html="description"
         />
       </div>

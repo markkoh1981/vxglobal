@@ -82,7 +82,7 @@ svg {
   .bg-bubble {
     background: url("/illustrations/il_bubble.png") no-repeat;
     background-position: top left;
-    background-size: 90% 100%;
+    background-size: 100% 100%;
   }
 }
 
@@ -119,8 +119,8 @@ svg {
 
 .bg-diamond {
   background: url("/illustrations/il_diamond.png") no-repeat;
-  background-position: center;
-  background-size: 75% 100%;
+  background-position: left;
+  background-size: 70% 100%;
 }
 
 .bg-fluid-parallelogram {

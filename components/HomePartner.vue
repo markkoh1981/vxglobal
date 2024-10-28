@@ -9,7 +9,7 @@ const [visible, container] = useVisible();
     class="relative flex flex-col space-y-8 px-4 overflow-y-hidden md:px-8 xl:max-w-7xl xl:self-center"
   >
     <div>
-      <h1 class="text-base font-bold">Partners</h1>
+      <h1 class="text-base font-bold md:text-lg xl:text-2xl">Partners</h1>
     </div>
     <div
       class="flex flex-col gap-y-4 overflow-x-scroll bg-small-parallelogram snap-x md:flex-row md:gap-8 xl:grid xl:grid-cols-3"
@@ -28,7 +28,7 @@ const [visible, container] = useVisible();
           <div class="flex-1 flex flex-col space-y-4">
             <div class="flex-1 flex items-center justify-center">
               <p
-                class="flex-1 text-sm leading-tight"
+                class="flex-1 text-base leading-tight"
                 v-html="partner.name"
               />
             </div>
