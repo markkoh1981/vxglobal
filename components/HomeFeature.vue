@@ -10,9 +10,9 @@ const [visible, container] = useVisible();
     >
       <div
         :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
-        class="flex-1 p-12 bg-bubble lt-xl:absolute lt-xl:inset-0 lt-lg:hidden"
+        class="bg-bubble absolute inset-0 lt-lg:hidden"
       />
-      <div class="flex gap-x-8 px-4 z-10 xl:px-16  xl:gap-x-16 xl:-ml-32">
+      <div class="flex gap-x-8 lt-md:px-4 z-10 xl:gap-x-16 xl:max-w-5xl xl:!ml-auto">
         <div
           v-for="(block, blockIndex) in homeFeatures"
           :key="blockIndex"
@@ -21,7 +21,7 @@ const [visible, container] = useVisible();
               ? 'lt-xl:first:animate-slide-in-left lt-xl:last:animate-slide-in-right lt-xl:visible'
               : 'lt-xl:invisible'
           "
-          class="lt-xl:flex-1 flex flex-col gap-y-16 md:gap-y-24 first:mb-24 last:mt-24 bg-bubble-transparent"
+          class="lt-xl:flex-1 flex flex-col gap-y-16 md:gap-y-24 first:mb-32 last:mt-56 bg-bubble-transparent"
         >
           <div
             v-for="(feature, index) in block"
@@ -31,7 +31,7 @@ const [visible, container] = useVisible();
                 ? 'last:md:animate-slide-in-up first:md:animate-slide-in-down md:visible'
                 : 'md:invisible'
             "
-            class="flex flex-col space-y-4 xl:max-w-xl px-4 md:py-4"
+            class="flex flex-col space-y-4 xl:max-w-xl px-4 md:px-8 md:py-4"
           >
             <div>
               <ButtonFill class="px-6 py-1 text-xs md:text-sm md:px-8 md:py-2">
@@ -50,7 +50,7 @@ const [visible, container] = useVisible();
                 class="flex-1 flex flex-col md:px-2"
               >
                 <li
-                  class="!leading-relaxed list-disc"
+                  class="leading-relaxed list-disc md:text-base md:leading-loose"
                   v-html="description"
                 />
               </ul>

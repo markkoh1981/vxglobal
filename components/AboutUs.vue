@@ -5,17 +5,17 @@ const [visible, container] = useVisible();
   <div
     ref="container"
     :class="{ 'animate-slide-in-left': visible }"
-    class="flex flex-col space-y-8 px-4 md:px-8 xl:w-7xl xl:self-center"
+    class="flex flex-col space-y-8 px-4 md:px-8 lg:px-16 2xl:w-7xl 2xl:self-center"
   >
     <div>
-      <h1 class="font-[Clash+Display] text-base font-bold">About Us</h1>
+      <h1 class="font-[Clash+Display] text-base font-bold md:text-2xl">About Us</h1>
     </div>
     <div class="flex">
-      <p class="text-white/75 !leading-relaxed md:max-w-xl">
-        Founded in 2011, VX GLOBAL began as a distribution company in the FMCG
-        (Fast Moving Consumer Goods) segment in Singapore. <br />
-        The company has since grown with its primary business pivoting to Fund
-        services and portfolio management, it is also involved in the
+      <p class="text-white/75 leading-relaxed md:leading-loose md:max-w-3xl">
+        Founded in 2011, VX GLOBAL began as a distribution company in the FMCG <br class="lt-md:hidden" />
+        (Fast Moving Consumer Goods) segment in Singapore. <br class="lt-md:hidden" />
+        The company has since grown with its primary business pivoting to Fund <br class="lt-md:hidden" />
+        services and portfolio management, it is also involved in the <br class="lt-md:hidden" />
         acceleration of startups across Southeast Asia.
       </p>
     </div>

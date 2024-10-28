@@ -25,7 +25,7 @@ defineProps<Props>();
     >
       <div class="flex flex-col justify-center items-center space-y-4 md:space-y-8 md:h-sm">
         <div class="flex flex-col md:space-y-4">
-          <h1 class="text-xl font-black md:text-4xl xl:text-6xl font-inter">
+          <h1 class="text-xl font-black md:text-4xl xl:text-6xl font-tommy">
             Building a Strong Management <br />
             System Across the Globe 🌍️
           </h1>
@@ -34,7 +34,7 @@ defineProps<Props>();
             perform your competitors, setting your brand apart.
           </p>
         </div>
-        <div class="flex space-x-2 text-base">
+        <div class="flex space-x-2 md:text-base">
           <ButtonFill class="p-4">
             <p class="text-black p-1 capitalize">Book A Session With Us</p>
           </ButtonFill>

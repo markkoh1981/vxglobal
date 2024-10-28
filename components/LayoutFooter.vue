@@ -8,7 +8,7 @@ const [visible, container] = useVisible();
 <template>
   <footer
     ref="container"
-    class="flex flex-col space-y-8 lt-xl:px-4 py-16 md:px-8 xl:w-7xl xl:self-center"
+    class="flex flex-col space-y-8 lt-xl:px-4 py-16 md:px-8 lg:px-16 2xl:w-7xl 2xl:self-center"
   >
     <div class="flex md:space-x-4">
       <div
@@ -22,7 +22,7 @@ const [visible, container] = useVisible();
           textClass="text-xl md:text-2xl"
         />
         <div class="flex flex-col space-y-4">
-          <p class="lt-md:max-w-56 !leading-relaxed md:max-w-auto">
+          <p class="lt-md:max-w-56 leading-relaxed md:leading-loose md:max-w-auto">
             VX GLOBAL excels in management consultancy, providing <br />
             tailored solutions for market entry, capital deployment for <br />
             funds, deal flow and operational strategies.
@@ -37,11 +37,11 @@ const [visible, container] = useVisible();
         :class="visible ? 'animate-slide-in-right visible' : 'invisible'"
         class="flex space-x-2 md:space-x-8 lg:space-x-16"
       >
-        <div class="flex flex-col space-y-4">
+        <div class="flex flex-col space-y-2">
           <div>
             <h1>Menu</h1>
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-col md:text-base">
             <NuxtLink
               v-for="navigation in layoutNavigations"
               :href="navigation.link"
@@ -50,11 +50,11 @@ const [visible, container] = useVisible();
             >
           </div>
         </div>
-        <div class="flex flex-col space-y-4">
+        <div class="flex flex-col space-y-2">
           <div>
             <h1>Socials</h1>
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-col md:text-base">
             <NuxtLink
               v-for="navigation in layoutSocials"
               :href="navigation.link"

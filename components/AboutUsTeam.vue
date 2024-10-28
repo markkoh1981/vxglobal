@@ -32,8 +32,8 @@ const [visible, container] = useVisible();
             />
           </div>
           <div class="flex flex-col space-y-2 text-center">
-            <h1 class="text-xs md:text-sm font-medium">{{ team.name }}</h1>
-            <p class="text-[12px] md:text-xs text-white/75">{{ team.title }}</p>
+            <h1 class="lt-md:text-xs font-medium">{{ team.name }}</h1>
+            <p class="text-[12px] md:text-base text-white/75">{{ team.title }}</p>
           </div>
         </div>
       </div>

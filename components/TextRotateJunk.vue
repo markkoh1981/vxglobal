@@ -9,10 +9,10 @@
     />
     <img
       src="/assets/illustrations/il_let_build_together.svg"
-      width="128"
-      height="128"
+      width="256"
+      height="256"
       alt="Let build together"
-      class="animate-spin animate-duration-[20s] lt-md:w-16 lt-md:h-16"
+      class="animate-spin animate-duration-[20s] lt-md:w-24 lt-md:h-24 md:w-40 md:h-40"
     />
   </div>
 </template>

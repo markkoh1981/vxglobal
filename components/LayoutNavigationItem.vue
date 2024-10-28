@@ -18,7 +18,7 @@ const active = computed(() => route.fullPath === props.link);
         class="bg-white/90"
       />
     </div>
-    <span>
+    <span class="text-base">
       {{ name }}
     </span>
   </NuxtLink>

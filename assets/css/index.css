@@ -41,11 +41,11 @@ svg {
 }
 
 .bg-spiral-and-block {
-  background-image: url("/illustrations/il_spiral_bg.png"),
-    url("/illustrations/il_block_bg.png");
+  background-image: url("/illustrations/il_block_bg.png"),
+    url("/illustrations/il_spiral_bg.png");
   background-repeat: no-repeat;
-  background-position: top right, bottom right;
-  background-size: 100% 75%, 40% 40%;
+  background-position: bottom right, top right;
+  background-size: 48% 40%, 100% 80%;
 }
 
 @screen lt-lg {
@@ -54,7 +54,7 @@ svg {
       url("/illustrations/il_block_bg.png");
     background-repeat: no-repeat;
     background-position: top right, bottom right;
-    background-size: 100% 75%, 55% 35%;
+    background-size: 100% 60%, 70% 45%;
   }
 
   .bg-bubble-transparent:last-child {
@@ -82,7 +82,7 @@ svg {
   .bg-bubble {
     background: url("/illustrations/il_bubble.png") no-repeat;
     background-position: top left;
-    background-size: 100% 100%;
+    background-size: 45% 100%;
   }
 }
 
@@ -120,7 +120,7 @@ svg {
 .bg-diamond {
   background: url("/illustrations/il_diamond.png") no-repeat;
   background-position: left;
-  background-size: 70% 100%;
+  background-size: 100% 100%;
 }
 
 .bg-fluid-parallelogram {

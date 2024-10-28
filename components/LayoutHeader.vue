@@ -6,10 +6,10 @@ const [visible, container] = useVisible();
   <header
     ref="container"
     :class="visible ?  'animate-slide-in-down visible' : 'invisible'"
-    class="flex items-center bg-gradient-to-r from-black/5 to-black px-4 py-2 md:px-8 xl:w-7xl xl:self-center"
+    class="flex items-center mx-4 py-2 md:mx-8 lg:mx-16 2xl:w-7xl 2xl:self-center"
   >
     <div class="z-10">
-      <div class="absolute w-56 h-32 top-0 bottom-0 bg-black blur-xl" />
+      <div class="absolute w-56 h-24 -top-4 bottom-0 bg-black blur-xl" />
       <Logo
         :width="32"
         :height="32"

@@ -39,28 +39,28 @@ export const homePortfolios: Card[][] = [
       logo: "/icons/ic_fryingfish.png",
       name: "Frying Fish Club",
       description:
-        "Fusion food restaurant chain with 5 outlets in 3 countries <br />  offering Japanese-inspired fish & chips, integrating NFTs",
+        "Fusion food restaurant chain with 5 outlets in 3 countries <br class='lt-md:hidden' />  offering Japanese-inspired fish & chips, integrating NFTs",
       link: "https://fryingfish.club",
     },
     {
       logo: "/icons/ic_palinggaming.png",
       name: "Paling Gaming",
       description:
-        "Premium furniture manufacturer and brand based in <br /> Indonesia",
+        "Premium furniture manufacturer and brand based in <br class='lt-md:hidden' /> Indonesia",
       link: "https://palinggaming.com",
     },
     {
       logo: "/icons/ic_bodynetic.png",
       name: "Bodynetic",
       description:
-        "A painless world with better lifestyles and accessible <br /> preventive solutions.",
+        "A painless world with better lifestyles and accessible <br class='lt-md:hidden' /> preventive solutions.",
       link: "https://bodynetic.co",
     },
     {
       logo: "/icons/ic_aim.png",
       name: "Aim Production House",
       description:
-        "A creative agency in Bandung dedicated to empowering local <br /> talent and elevating the creative scene.",
+        "A creative agency in Bandung dedicated to empowering local <br class='lt-md:hidden' /> talent and elevating the creative scene.",
       link: "https://aimph.co",
     },
   ],
@@ -69,7 +69,7 @@ export const homePortfolios: Card[][] = [
       logo: "/icons/ic_megacorp.png",
       name: "Megacorp Trading Card Game",
       description:
-        "A cyberpunk-themed card game that immerses players in a <br /> complex world of genetically modified beings, powerful psychics",
+        "A cyberpunk-themed card game that immerses players in a <br class='lt-md:hidden' /> complex world of genetically modified beings, powerful psychics",
       link: "https://megacorptcg.com",
     },
   ],
@@ -81,7 +81,7 @@ export const homeWeb3: Card[] = [
     name: "All.Art",
     category: "Tokenomics",
     description:
-      "A collective focusing on the tokenisation of Real World Assets, <br /> development of on-chain licensing infrastructure.",
+      "A collective focusing on the tokenisation of Real World Assets, <br class='lt-md:hidden' /> development of on-chain licensing infrastructure.",
     link: "https://all.art",
   },
   {
@@ -89,7 +89,7 @@ export const homeWeb3: Card[] = [
     name: "Monstro",
     category: "Finance",
     description:
-      "A DeFi-focused company offering transparent yield farming <br /> through its Monstro's Farm program",
+      "A DeFi-focused company offering transparent yield farming <br class='lt-md:hidden' /> through its Monstro's Farm program",
     link: "https://monstro.fun",
   },
 ];

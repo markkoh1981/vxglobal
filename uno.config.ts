@@ -15,6 +15,7 @@ export default defineConfig({
       inter: ["Noto+Sans"],
       clash: ["Clash+Display"],
       outfit: ["Outfit"],
+      tommy: ["Made+Tommy"]
     },
     colors: {
       primary: "#A3A3A3",

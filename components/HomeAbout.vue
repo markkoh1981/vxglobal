@@ -4,14 +4,14 @@ const [visible, container] = useVisible();
 <template>
   <div
     ref="container"
-    class="relative flex flex-col lt-md:pb-8 md:relative md:py-24"
+    class="relative flex flex-col lt-md:pb-8 md:relative md:h-md md:pt-16 lg:-translate-y-16"
   >
     <div
       :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
-      class="flex flex-col space-y-4 z-10 px-4 md:px-8 md:space-y-4 xl:w-7xl xl:self-center"
+      class="flex flex-col space-y-4 z-10 px-4 md:px-8 lg:px-16 md:space-y-4 2xl:w-7xl 2xl:self-center"
     >
       <div
-        class="!leading-relaxed  lt-md:max-w-56 md:max-w-auto"
+        class="leading-relaxed  lt-md:max-w-xs md:max-w-auto md:leading-loose"
       >
         <p>
           Founded in 2011, VX GLOBAL began as a distribution company in
