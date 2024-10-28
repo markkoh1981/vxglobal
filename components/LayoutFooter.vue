@@ -8,7 +8,7 @@ const [visible, container] = useVisible();
 <template>
   <footer
     ref="container"
-    class="flex flex-col space-y-8 lt-xl:px-4 py-16 md:px-8 lg:px-16 2xl:w-9/10 2xl:self-center"
+    class="flex flex-col space-y-8 lt-xl:px-4 py-16 md:px-8 lg:px-16 xl:px-0 2xl:w-9/10 2xl:self-center"
   >
     <div class="flex md:space-x-4">
       <div

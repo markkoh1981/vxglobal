@@ -131,6 +131,14 @@ svg {
   background-size: 100% 100%;
 }
 
+@screen xl {
+  .bg-diamond {
+    background: url("/illustrations/il_diamond.png") no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+  }
+}
+
 .bg-fluid-parallelogram {
   background: url("/assets/icons/ic_fluid_parallogram.svg") no-repeat;
   background-position: top right;

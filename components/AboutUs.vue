@@ -5,7 +5,7 @@ const [visible, container] = useVisible();
   <div
     ref="container"
     :class="{ 'animate-slide-in-left': visible }"
-    class="flex flex-col space-y-8 px-4 md:px-8 lg:px-16 2xl:w-9/10 2xl:self-center"
+    class="flex flex-col space-y-8 px-4 md:px-8 lg:px-16 2xl:px-0 2xl:w-9/10 2xl:self-center"
   >
     <div>
       <h1 class="font-[Clash+Display] text-base font-bold md:text-2xl">About Us</h1>
