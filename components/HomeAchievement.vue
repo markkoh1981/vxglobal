@@ -7,7 +7,7 @@ const [visible, container] = useVisible();
     class="relative flex bg-gradient overflow-y-hidden"
   >
     <div
-      class="flex-1 flex flex-col space-y-2 px-4 pr-8 py-8 md:px-8 md:py-16 2xl:max-w-7xl 2xl:m-auto"
+      class="flex-1 flex flex-col space-y-2 px-4 pr-8 py-8 md:px-8 md:py-16 xl:px-0 2xl:max-w-9/10 2xl:m-auto"
     >
       <div>
         <h1 class="text-base font-bold md:text-xl md:text-2xl">Achievements</h1>

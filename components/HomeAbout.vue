@@ -8,7 +8,7 @@ const [visible, container] = useVisible();
   >
     <div
       :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
-      class="flex flex-col space-y-4 z-10 px-4 md:px-8 lg:px-16 md:space-y-4 2xl:w-7xl 2xl:self-center"
+      class="flex flex-col space-y-4 z-10 px-4 md:px-8 lg:px-16 md:space-y-4 xl:px-0 2xl:w-9/10 2xl:self-center"
     >
       <div
         class="leading-relaxed  lt-md:max-w-xs md:max-w-auto md:leading-loose"

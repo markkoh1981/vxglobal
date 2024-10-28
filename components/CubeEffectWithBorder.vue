@@ -18,7 +18,7 @@ defineProps({
 });
 </script>
 <template>
-  <div class="w-full h-full relative flex flex-col lt-md:p-0.25">
+  <div class="min-w-full md:min-w-sm relative flex flex-col lt-md:p-0.25">
     <component
       :is="is"
       class="box z-10 rounded-md"

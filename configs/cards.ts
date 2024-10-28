@@ -94,17 +94,20 @@ export const homeWeb3: Card[] = [
   },
 ];
 
-export const homePartners: Omit<Card, "logo" | "description" | "category">[] = [
+export const homePartners: Omit<Card, "description" | "category">[] = [
   {
     name: "OFFCHAIN GLOBAL",
     link: "https://offchain.social",
+    logo: "/icons/ic_offchain.png",
   },
   {
-    name: "CEEC (Central and East European Chamber <br /> of Commerce in Singapore)",
+    name: "CEEC (Central and East European <br /> Chamber of Commerce in Singapore)",
     link: "https://ceec.org.sg",
+    logo: "/icons/ic_ceec.png",
   },
   {
     name: "ARC Accelerator (Cambodia)",
     link: "https://arcaccelerator.com",
+    logo: "/icons/ic_arc.png",
   },
 ];

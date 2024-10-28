@@ -28,13 +28,22 @@ defineProps<Props>();
         <div class="absolute inset-0 bg-black blur-3xl" />
 
         <div class="flex flex-col md:space-y-4 z-10">
-          <h1 class="text-xl font-black md:text-4xl xl:text-6xl font-tommy">
-            Building a Strong Management <br />
-            System Across the Globe 🌍️
-          </h1>
+          <div class="flex flex-col md:space-y-2 text-2xl font-black md:text-4xl xl:text-6xl font-tommy">
+            <h1>
+              Accelerating Growth <br />
+            </h1>
+            <div class="flex items-center justify-center space-x-2">
+              <h1>in Southeast Asia</h1>
+              <img
+                src="~/assets/icons/ic_asia.svg"
+                width="48"
+                height="48"
+                class="lt-md:w-6"
+              />
+            </div>
+          </div>
           <p class="!leading-relaxed">
-            Elevate your company with creatives that consistently out <br />
-            perform your competitors, setting your brand apart.
+            Connecting Capital, Talent, and Opportunity
           </p>
         </div>
         <div class="flex space-x-4 md:space-x-8 md:text-base z-10">

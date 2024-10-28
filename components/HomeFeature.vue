@@ -3,7 +3,7 @@ import { homeFeatures } from "~/configs/features";
 const [visible, container] = useVisible();
 </script>
 <template>
-  <section class="flex flex-col">
+  <section class="flex flex-col 2xl:w-9/10 2xl:self-center">
     <div
       ref="container"
       class="flex-1 relative flex space-y-8 lt-md:items-start lt-xl:flex-col lt-xl:items-end"
