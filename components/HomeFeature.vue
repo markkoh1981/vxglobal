@@ -10,9 +10,9 @@ const [visible, container] = useVisible();
     >
       <div
         :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
-        class="bg-bubble absolute inset-0 lt-lg:hidden"
+        class="bg-bubble absolute inset-0 lt-md:hidden"
       />
-      <div class="flex gap-x-8 lt-md:px-4 z-10 xl:gap-x-16 xl:max-w-5xl xl:!ml-auto">
+      <div class="flex lt-md:px-4 z-10 xl:gap-x-16 xl:max-w-5xl xl:!ml-auto">
         <div
           v-for="(block, blockIndex) in homeFeatures"
           :key="blockIndex"
@@ -21,7 +21,7 @@ const [visible, container] = useVisible();
               ? 'lt-xl:first:animate-slide-in-left lt-xl:last:animate-slide-in-right lt-xl:visible'
               : 'lt-xl:invisible'
           "
-          class="lt-xl:flex-1 flex flex-col gap-y-16 md:gap-y-24 first:mb-32 last:mt-56 bg-bubble-transparent"
+          class="lt-xl:flex-1 flex flex-col gap-y-16 md:gap-y-24  last:mt-52 bg-bubble-transparent"
         >
           <div
             v-for="(feature, index) in block"
@@ -40,7 +40,7 @@ const [visible, container] = useVisible();
             </div>
             <div class="space-y-2">
               <h1
-                class="text-sm font-bold text-nowrap capitalize md:text-base xl:text-2xl"
+                class="font-bold text-nowrap capitalize lt-md:text-base"
               >
                 {{ feature.title }}
               </h1>
@@ -50,7 +50,7 @@ const [visible, container] = useVisible();
                 class="flex-1 flex flex-col md:px-2"
               >
                 <li
-                  class="leading-relaxed list-disc md:text-base md:leading-loose"
+                  class="leading-relaxed list-disc md:text-sm text-white/70 md:leading-loose"
                   v-html="description"
                 />
               </ul>
