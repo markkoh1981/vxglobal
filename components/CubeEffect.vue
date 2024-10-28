@@ -17,8 +17,18 @@ defineProps({
 
 <style scoped>
 .box {
-  clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 100%, 10% 100%, 0% 90%);
+  clip-path: polygon(
+    20% 0%,
+    88% 0,
+    100% 22%,
+    100% 100%,
+    80% 100%,
+    10% 100%,
+    0 73%,
+    0 0
+  );
 }
+
 
 @screen md {
   .box {

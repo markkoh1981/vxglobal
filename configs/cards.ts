@@ -39,7 +39,7 @@ export const homePortfolios: Card[][] = [
       logo: "/icons/ic_fryingfish.png",
       name: "Frying Fish Club",
       description:
-        "Fusion food restaurant chain with 5 outlets in 3 countries offering Japanese-inspired fish & chips, integrating NFTs",
+        "Fusion food restaurant chain with 5 outlets in 3 countries <br />  offering Japanese-inspired fish & chips, integrating NFTs",
       link: "https://fryingfish.club",
     },
     {
@@ -100,11 +100,11 @@ export const homePartners: Omit<Card, "logo" | "description" | "category">[] = [
     link: "https://offchain.social",
   },
   {
-    name: "Central and East European Chamber of Commerce in Singapore",
+    name: "CEEC (Central and East European Chamber <br /> of Commerce in Singapore)",
     link: "https://ceec.org.sg",
   },
   {
-    name: "ARC Accelerator in Cambodia",
+    name: "ARC Accelerator (Cambodia)",
     link: "https://arcaccelerator.com",
   },
 ];

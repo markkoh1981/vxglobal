@@ -4,17 +4,17 @@ const [visible, container] = useVisible();
 <template>
   <div
     ref="container"
-    class="flex flex"
+    class="flex"
   >
     <div
       :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
-      class="flex-1 bg-diamond lt-md:hidden"
+      class="w-1/2 bg-diamond lt-md:hidden"
     />
     <div
       :class="visible ? 'animate-slide-in-right visible' : 'invisible'"
-      class="flex xl:w-5xl"
+      class="flex-1 xl:w-5xl"
     >
-      <div class="ml-auto flex flex-col space-y-2 px-4 md:px-8 md:py-16">
+      <div class="ml-ato flex flex-col space-y-8 px-4 md:px-8 md:py-16">
         <div>
           <h1 class="font-[Clash+Display] text-base font-bold">Purpose</h1>
         </div>

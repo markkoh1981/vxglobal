@@ -4,7 +4,7 @@ const [visible, container] = useVisible();
 </script>
 <template>
   <div class="relative flex flex-col bg-belt">
-    <div class="flex flex-col space-y-4 xl:w-7xl xl:self-center">
+    <div class="flex flex-col space-y-16 xl:w-7xl xl:self-center">
       <div class="text-center">
         <h1 class="text-base font-bold">Meet Our Team</h1>
       </div>
@@ -15,7 +15,11 @@ const [visible, container] = useVisible();
         <div
           v-for="team in aboutUsTeams"
           class="flex flex-col items-center space-y-4"
-          :class="visible ?  'odd:animate-slide-in-left even:animate-slide-in-right visible' : 'invisible'"
+          :class="
+            visible
+              ? 'odd:animate-slide-in-left even:animate-slide-in-right visible'
+              : 'invisible'
+          "
         >
           <div>
             <NuxtImg
@@ -23,12 +27,13 @@ const [visible, container] = useVisible();
               :alt="team.name"
               width="256"
               height="256"
+              fit="inside"
               class="w-40"
             />
           </div>
           <div class="flex flex-col space-y-2 text-center">
-            <h1 class="text-sm md:text-base font-medium">{{ team.name }}</h1>
-            <p class="text-xs md:text-sm text-white/75">{{ team.title }}</p>
+            <h1 class="text-xs md:text-sm font-medium">{{ team.name }}</h1>
+            <p class="text-[12px] md:text-xs text-white/75">{{ team.title }}</p>
           </div>
         </div>
       </div>

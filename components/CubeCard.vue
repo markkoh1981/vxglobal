@@ -6,7 +6,7 @@ defineProps<Card & { linkClass?: string }>();
 
 <template>
   <CubeEffect
-    class="shrink-0 flex flex-col space-y-2 md:space-y-4 bg-primary text-black px-8 py-4 snap-center"
+    class="flex flex-col space-y-2 md:space-y-4 bg-primary text-black px-8 py-4"
   >
     <div class="flex-1 flex flex-col space-y-2 md:space-y-4">
       <div class="flex items-center space-x-2">
@@ -31,6 +31,7 @@ defineProps<Card & { linkClass?: string }>();
         :href="link"
         target="_blank"
         :class="linkClass"
+        class="md:ml-auto xl:ml-0"
       >
         {{ link.replaceAll("https://", "").replaceAll("/", "") }}
       </NuxtLink>

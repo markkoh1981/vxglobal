@@ -8,4 +8,5 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
   },
+  components: ["~/components/widgets", "~/components/"],
 });

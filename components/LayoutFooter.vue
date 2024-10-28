@@ -8,7 +8,7 @@ const [visible, container] = useVisible();
 <template>
   <footer
     ref="container"
-    class="flex flex-col space-y-8 lt-xl:px-4 py-16 xl:w-7xl xl:self-center"
+    class="flex flex-col space-y-8 lt-xl:px-4 py-16 md:px-8 xl:w-7xl xl:self-center"
   >
     <div class="flex md:space-x-4">
       <div
@@ -37,7 +37,7 @@ const [visible, container] = useVisible();
       </div>
       <div
         :class="visible ? 'animate-slide-in-right visible' : 'invisible'"
-        class="flex space-x-2 md:space-x-4"
+        class="flex space-x-2 md:space-x-8 lg:space-x-16"
       >
         <div class="flex flex-col space-y-4">
           <div>

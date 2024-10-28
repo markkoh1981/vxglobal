@@ -30,5 +30,7 @@ export default defineConfig({
     "i-fa-brands:twitter",
     "i-fa-brands:telegram-plane",
     "i-mdi:email",
+    "i-mdi:home-outline",
+    "i-mdi:alert-circle-outline",
   ],
 });

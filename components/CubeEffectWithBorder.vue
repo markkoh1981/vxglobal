@@ -18,10 +18,10 @@ defineProps({
 });
 </script>
 <template>
-  <div class="w-full h-full relative flex flex-col md:p-0.5">
+  <div class="w-full h-full relative flex flex-col lt-md:p-0.25">
     <component
       :is="is"
-      class="box w-full h-full z-10 rounded-md"
+      class="box z-10 rounded-md"
       :class="class"
     >
       <slot />
@@ -35,7 +35,16 @@ defineProps({
 
 <style scoped>
 .box {
-  clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 100%, 10% 100%, 0% 90%);
+  clip-path: polygon(
+    20% 0%,
+    88% 0,
+    100% 22%,
+    100% 100%,
+    80% 100%,
+    10% 100%,
+    0 73%,
+    0 0
+  );
 }
 
 @screen md {

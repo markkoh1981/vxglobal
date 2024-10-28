@@ -17,11 +17,12 @@ const [visible, container] = useVisible();
       <h1 class="text-base font-bold">Web 3.0</h1>
     </div>
     <div
-      class="flex flex-col gap-y-4 px-4 md:px-8 snap-x overflow-x-scroll md:grid md:grid-cols-2 md:gap-16"
+      class="flex gap-4 px-4 lt-sm:flex-col md:px-8 md:overflow-x-scroll md:snap-x xl:grid xl:grid-cols-2 md:gap-16"
     >
       <CubeCard
         v-for="portfolio in homeWeb3"
         v-bind="portfolio"
+        class="md:min-w-xl"
         :class="
           visible
             ? 'lt-md:odd:animate-slide-in-left lt-md:even:animate-slide-in-right lt-md:visible'

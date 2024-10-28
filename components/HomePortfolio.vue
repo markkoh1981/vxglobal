@@ -6,17 +6,12 @@ const [visible, container] = useVisible();
   <section
     id="portfolio"
     ref="container"
-    class="relative flex flex-col space-y-8 bg-bubble-mirror"
+    class="relative flex flex-col space-y-8 bg-bubble-mirror py-8"
     style="--mask: url('/icons/ic_plain_parallelogram.svg#mask')"
-
   >
     <div class="flex flex-col space-y-8 px-4 md:px-8 xl:w-7xl xl:self-center">
       <div
-        :class="
-          visible
-            ? 'animate-slide-in-down visible'
-            : 'invisible'
-        "
+        :class="visible ? 'animate-slide-in-down visible' : 'invisible'"
         class="flex flex-col space-y-4"
       >
         <h1 class="text-base font-bold md:text-lg xl:text-xl">
@@ -31,11 +26,12 @@ const [visible, container] = useVisible();
       <div class="flex flex-col space-y-4 md:space-y-8">
         <div
           v-for="block in homePortfolios"
-          class="shrink-0 grid grid-cols-1 gap-y-4 lt-md:justify-center lt-md:items-center md:grid-cols-2 md:gap-16 last:md:flex last:md:items-center last:md:justify-center"
+          class="shrink-0 flex flex-col gap-y-4 lt-md:justify-center lt-md:items-center last:md:flex md:items-center md:justify-center xl:grid xl:grid-cols-2 xl:gap-16"
         >
           <CubeCard
             v-for="portfolio in block"
             v-bind="portfolio"
+            class="lt-sm:w-full sm:min-w-xl h-full md:mx-auto"
             :class="
               visible
                 ? 'odd:animate-slide-in-left even:animate-slide-in-right visible'

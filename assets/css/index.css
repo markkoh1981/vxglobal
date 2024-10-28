@@ -48,7 +48,7 @@ svg {
   background-size: 100% 75%, 40% 40%;
 }
 
-@screen lt-md {
+@screen lt-lg {
   .bg-spiral-and-block {
     background-image: url("/illustrations/il_spiral_bg.png"),
       url("/illustrations/il_block_bg.png");
@@ -59,22 +59,30 @@ svg {
 
   .bg-bubble-transparent:last-child {
     background: url("/illustrations/il_transparent_bubble_invert.png") no-repeat;
-    background-position: top left, top right;
+    background-position: top left;
     background-size: 100% 100%;
   }
 
   .bg-bubble-transparent:first-child {
     background: url("/illustrations/il_transparent_bubble.png") no-repeat;
-    background-position: top left, top right;
+    background-position: top right;
     background-size: 100% 80%;
   }
 }
 
-@screen md {
+@screen lg {
   .bg-bubble {
     background: url("/illustrations/il_bubble.png") no-repeat;
     background-position: top left;
-    background-size: 100% 100%;
+    background-size: 55% 100%;
+  }
+}
+
+@screen xl {
+  .bg-bubble {
+    background: url("/illustrations/il_bubble.png") no-repeat;
+    background-position: top left;
+    background-size: 90% 100%;
   }
 }
 
@@ -94,17 +102,25 @@ svg {
   background-size: 100% 100%;
 }
 
+@screen lt-md {
+  .bg-belt {
+    background: url("/illustrations/il_belt.png") no-repeat;
+    background-position: center;
+    background-size: 100% 60%;
+  }
+}
+
 .bg-bubble-mirror {
   background: url("/illustrations/il_bubble_2.png") no-repeat,
     url("/illustrations/il_bubble_3.png") no-repeat;
   background-position: bottom left, bottom right;
-  background-size: 40% 80%, 40% 80%;
+  background-size: 40% 85%, 45% 72%;
 }
 
 .bg-diamond {
   background: url("/illustrations/il_diamond.png") no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 75% 100%;
 }
 
 .bg-fluid-parallelogram {

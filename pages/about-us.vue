@@ -4,7 +4,7 @@
     class="relative flex flex-col space-y-8 overflow-x-hidden overflow-y-scroll bg-gradient-2"
   >
     <LayoutHeader />
-    <div class="flex flex-col space-y-8 z-10">
+    <div class="flex flex-col space-y-24 z-10">
       <AboutUs />
       <div class="relative flex items-center px-4 py-8 xl:w-[90%] xl:self-end">
         <TextRotateJunk />
