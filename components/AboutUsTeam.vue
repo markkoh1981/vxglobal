@@ -6,7 +6,7 @@ const [visible, container] = useVisible();
   <div class="relative flex flex-col bg-belt">
     <div class="flex flex-col space-y-16 2xl:w-9/10 2xl:self-center">
       <div class="text-center">
-        <h1 class="text-base font-bold">Meet Our Team</h1>
+        <h1>Meet Our Team</h1>
       </div>
       <div
         ref="container"
@@ -28,12 +28,12 @@ const [visible, container] = useVisible();
               width="256"
               height="256"
               fit="inside"
-              class="w-40"
+              class="w-40 xl:w-64"
             />
           </div>
           <div class="flex flex-col space-y-2 text-center">
             <h1 class="lt-md:text-xs font-medium">{{ team.name }}</h1>
-            <p class="text-[12px] md:text-base text-white/75">{{ team.title }}</p>
+            <p class="text-[12px] md:text-base text-white/75 xl:text-2xl">{{ team.title }}</p>
           </div>
         </div>
       </div>

@@ -57,7 +57,6 @@ onClickOutside(navigation, () => (open.value = false));
         >
           <div
             :class="social.icon"
-            class="text-base"
           />
         </NuxtLink>
       </div>

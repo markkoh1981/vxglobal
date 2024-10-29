@@ -8,7 +8,7 @@ const [visible, container] = useVisible();
 <template>
   <footer
     ref="container"
-    class="flex flex-col space-y-8 lt-xl:px-4 py-16 md:px-8 lg:px-16 xl:px-0 2xl:w-9/10 2xl:self-center"
+    class="flex flex-col space-y-8 lt-xl:px-4 py-16 md:px-8 lg:px-16 2xl:px-0 2xl:w-9/10 2xl:self-center"
   >
     <div class="flex md:space-x-4">
       <div
@@ -28,7 +28,7 @@ const [visible, container] = useVisible();
             funds, deal flow and operational strategies.
           </p>
           <div class="flex items-center space-x-2">
-            <div class="i-mdi:email-outline text-base" />
+            <div class="i-mdi:email-outline" />
             <p>mark@transendentconcepts.com</p>
           </div>
         </div>
@@ -41,7 +41,7 @@ const [visible, container] = useVisible();
           <div>
             <h1>Menu</h1>
           </div>
-          <div class="flex flex-col md:text-base">
+          <div class="flex flex-col md:text-base 2xl:text-2xl">
             <NuxtLink
               v-for="navigation in layoutNavigations"
               :href="navigation.link"
@@ -54,7 +54,7 @@ const [visible, container] = useVisible();
           <div>
             <h1>Socials</h1>
           </div>
-          <div class="flex flex-col md:text-base">
+          <div class="flex flex-col md:text-base 2xl:text-2xl">
             <NuxtLink
               v-for="navigation in layoutSocials"
               :href="navigation.link"

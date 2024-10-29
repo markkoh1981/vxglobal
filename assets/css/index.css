@@ -1,3 +1,9 @@
+*:root {
+  --box-size: 40px;
+  --box-height: 14rem;
+  --box-color: red;
+}
+
 @screen lt-md {
   bg-bubble {
     background: url("/illustrations/il_bubble.png") no-repeat left/70%;
@@ -91,6 +97,14 @@ svg {
     background: url("/illustrations/il_bubble.png") no-repeat;
     background-position: top left;
     background-size: 50% 100%;
+  }
+}
+
+@screen 2xl {
+  .bg-bubble {
+    background: url("/illustrations/il_bubble.png") no-repeat;
+    background-position: top left;
+    background-size: 100% 100%;
   }
 }
 

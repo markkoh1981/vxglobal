@@ -8,11 +8,11 @@ const [visible, container] = useVisible();
     :class="visible ? 'md:animate-slide-in-up md:visible' : 'md:invisible'"
     class="relative flex flex-col space-y-8 lt-md:px-4 overflow-y-hidden 2xl:w-9/10 2xl:self-center"
   >
-    <div class="md:px-8 lg:px-16 xl:px-0">
+    <div class="md:px-8 lg:px-16 2xl:px-0">
       <h1 class="text-base font-bold md:text-lg xl:text-2xl">Partners</h1>
     </div>
     <div
-      class="flex flex-col gap-y-4 overflow-x-scroll bg-small-parallelogram snap-x md:px-8 lg:px-16 md:flex-row md:gap-8 xl:px-0 xl:grid xl:grid-cols-3"
+      class="flex flex-col gap-y-4 overflow-x-scroll bg-small-parallelogram snap-x md:px-8 lg:px-16 md:flex-row md:gap-8 2xl:px-0 xl:grid xl:grid-cols-3"
     >
       <div
         v-for="(partner, index) in homePartners"

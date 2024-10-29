@@ -14,9 +14,9 @@ const [visible, container] = useVisible();
       :class="visible ? 'animate-slide-in-right visible' : 'invisible'"
       class="flex-1"
     >
-      <div class="flex flex-col space-y-8 px-4 md:px-8 md:py-16 xl:max-w-8/10 xl:self-end">
+      <div class="flex flex-col space-y-8 px-4 md:px-8 md:py-16 xl:px-16  xl:self-end">
         <div>
-          <h1 class="font-[Clash+Display] text-base font-bold  md:text-2xl">Purpose</h1>
+          <h1 class="font-[Clash+Display] text-base font-bold xl:text-6xl">Purpose</h1>
         </div>
         <p class="text-white/75 leading-relaxed md:leading-loose">
           VX GLOBAL is a holding entity for its own portfolio investments. Its
