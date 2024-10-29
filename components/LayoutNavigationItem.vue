@@ -10,16 +10,17 @@ const active = computed(() => route.fullPath === props.link);
     :class="active ? 'text-white' : 'text-white/75'"
   >
     <div
-      v-if="active"
-      class="bg-white/10 border border-white/60 rounded p-0.5"
+      v-if="active && icon"
+      class="bg-white/10 border border-white/60 rounded p-0.5 md:p-1"
     >
       <div
         :class="icon"
-        class="bg-white/90"
+        class="bg-white/90 2xl:text-2xl"
       />
     </div>
     <span
-    class="lt-md:leading-relaxed lt-md:text-sm md:text-base lg:text-xl 3xl:text-2xl leading-loose">
+      class="lt-md:leading-relaxed lt-md:text-sm md:text-base lg:text-xl 3xl:text-2xl leading-loose"
+    >
       {{ name }}
     </span>
   </NuxtLink>
