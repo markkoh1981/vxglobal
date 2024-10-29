@@ -107,10 +107,28 @@ svg {
     background-size: 50% 100%;
   }
 }
+@screen 3xl {
+  .bg-bubble {
+    background: url("/illustrations/il_bubble.png") no-repeat;
+    background-position: top left;
+    background-size: 45% 100%;
+  }
+}
 
 .bg-gradient {
-  background: url("/illustrations/il_gradient.png") no-repeat;
-  background-size: cover;
+  background: url("/illustrations/il_gradient.png") no-repeat,
+    url(/illustrations/il_galaxy.png) no-repeat;
+  background-size: 100% 100%, 50% 100%;
+  background-position: left, right;
+}
+
+@screen md {
+  .bg-gradient {
+    background: url("/illustrations/il_gradient.png") no-repeat,
+      url(/illustrations/il_galaxy.png) no-repeat;
+    background-size: 100% 100%, 20% 100%;
+    background-position: left, right;
+  }
 }
 
 .bg-gradient-2 {

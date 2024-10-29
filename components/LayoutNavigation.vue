@@ -17,15 +17,19 @@ onClickOutside(navigation, () => (open.value = false));
       ref="navigation"
       class="flex lt-md:flex-col lt-md:space-y-8 lt-md:bg-[#101010] p-2 w-full lt-md:h-sm mx-auto rounded-xl"
       :class="
-        open ? 'lt-md:animate-slide-in-down lt-md:!animate-duration-150' : 'lt-md:animate-slide-in-up'
+        open
+          ? 'lt-md:animate-slide-in-down lt-md:animate-duration-150'
+          : 'lt-md:animate-slide-in-up'
       "
     >
       <div class="flex lt-md:flex-col md:flex-1">
         <header class="flex items-center p-2 md:hidden">
           <div class="flex-1">
             <Logo
-              class="w-8 h-8"
-              text-class="text-sm md:text-base"
+              :width="32"
+              :height="32"
+              class="w-6 h-6 md:w-8 md:h-8 xl:w-14 xl:w-14 4xl:w-16 4xl:h-16"
+              textClass="text-xl z-10 xl:text-xl 2xl:text-4xl 4xl:text-5xl"
             />
           </div>
           <div>
@@ -33,7 +37,7 @@ onClickOutside(navigation, () => (open.value = false));
               class="px-6 py-1.5"
               @click="open = false"
             >
-              <p class="text-black">Close</p>
+              <p class="text-xs text-black">Close</p>
             </ButtonFill>
           </div>
         </header>
@@ -53,11 +57,9 @@ onClickOutside(navigation, () => (open.value = false));
           v-for="social in layoutSocials"
           target="_blank"
           :href="social.link"
-          class=" p-1.5 rounded border border-white/40 bg-white/10"
+          class="p-1.5 rounded border border-white/40 bg-white/10"
         >
-          <div
-            :class="social.icon"
-          />
+          <div :class="social.icon" />
         </NuxtLink>
       </div>
     </div>

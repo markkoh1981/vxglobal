@@ -23,7 +23,7 @@ defineProps<Props>();
       class="h-sm flex flex-col items-center text-center md:h-xl xl:h-3xl"
     >
       <div
-        class="relative flex flex-col justify-center items-center space-y-4 md:space-y-8 md:h-sm"
+        class="relative flex flex-col justify-center items-center space-y-4 md:space-y-8 md:h-sm 2xl:h-xl"
       >
         <div class="absolute inset-0 bg-black blur-3xl" />
 
@@ -42,7 +42,7 @@ defineProps<Props>();
               />
             </div>
           </div>
-          <p class="!leading-relaxed">
+          <p class="lt-md:leading-relaxed leading-loose">
             Connecting Capital, Talent, and Opportunity
           </p>
         </div>

@@ -13,7 +13,6 @@ const [visible, container] = useVisible();
     </div>
     <div
       class="flex flex-col gap-y-4 overflow-x-scroll bg-small-parallelogram snap-x md:px-8 lg:px-16 md:flex-row md:gap-8 2xl:px-0 xl:grid xl:grid-cols-3"
-      style="--mask: url('/illustrations/il_xs_parallelogram.png')"
     >
       <CubeEffect
         v-for="(partner, index) in homePartners"
@@ -22,7 +21,7 @@ const [visible, container] = useVisible();
             ? 'lt-md:even:animate-slide-in-right lt-md:odd:animate-slide-in-left lt-md:visible'
             : 'lt-md:invisible'
         "
-        class="flex flex-col space-y-4 p-8 h-50 md:text-black min-w-md"
+        class="flex flex-col space-y-4 p-8 md:h-50 md:text-black md:min-w-md"
       >
         <div class="flex-1 flex items-center justify-center space-x-2">
           <NuxtImg
@@ -32,7 +31,7 @@ const [visible, container] = useVisible();
             height="48"
           />
           <p
-            class="flex-1 lt-md:leading-tight"
+            class="flex-1 llt-md:leading-relaxed lt-md:text-sm md:text-base lg:text-xl 3xl:text-2xl leading-loose"
             v-html="partner.name"
           />
         </div>
@@ -48,3 +47,14 @@ const [visible, container] = useVisible();
     </div>
   </section>
 </template>
+<style scoped>
+.box {
+  --mask: url(/illustrations/il_xs_outline_parallelogram.png);
+}
+
+@screen md {
+  .box {
+    --mask: url(/illustrations/il_xs_parallelogram.png);
+  }
+}
+</style>

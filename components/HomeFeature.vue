@@ -25,7 +25,7 @@ const [visible, container] = useVisible();
         >
           <div
             v-if="[0].includes(blockIndex)"
-            class="absolute inset-0 -left-24 bg-black/90 blur-3xl"
+            class="absolute inset-0 -left-24 bg-black/80 blur-3xl"
           />
           <div
             v-for="(feature, index) in block"
@@ -40,7 +40,7 @@ const [visible, container] = useVisible();
             <div class="flex flex-col space-y-4 px-4 md:px-8 md:py-4 z-10">
               <div>
                 <ButtonFill
-                  class="px-6 py-1 text-base md:text-sm md:px-10 md:py-4 2xl:text-xl 2xl:px-16"
+                  class="px-6 py-1  md:px-10 md:py-4 2xl:px-16"
                 >
                   <p class="text-black font-bold">0{{ feature.index }}</p>
                 </ButtonFill>
@@ -55,7 +55,7 @@ const [visible, container] = useVisible();
                   class="flex-1 flex flex-col md:px-2"
                 >
                   <li
-                    class="lt-md:leading-relaxed list-disc lt-md:text-sm text-white/70 !leading-loose"
+                    class="list-disc lt-md:leading-relaxed  lt-md:text-sm md:text-base lg:text-xl 3xl:text-3xl text-white/70 leading-loose"
                     v-html="description"
                   />
                 </ul>

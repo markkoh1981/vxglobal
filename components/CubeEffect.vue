@@ -17,7 +17,7 @@ defineProps({
 
 <style scoped>
 .box {
-  background: var(--mask) no-repeat;
+  background: var(--mask)  no-repeat;
   background-size: 100% 100%;
 }
 </style>

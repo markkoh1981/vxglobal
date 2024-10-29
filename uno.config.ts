@@ -50,5 +50,6 @@ export default defineConfig({
     "i-mdi:email",
     "i-mdi:home-outline",
     "i-mdi:alert-circle-outline",
+    "lt-xl:hidden",
   ],
 });

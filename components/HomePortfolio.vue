@@ -20,7 +20,7 @@ const [visible, container] = useVisible();
         <h1 class="lt-md:text-base font-bold lt-xl:text-lg xl:text-2x">
           Our Portofolio
         </h1>
-        <p class="lt-md:leading-relaxed !leading-loose 2xl:text-2xl">
+        <p class="lt-md:leading-relaxed leading-loose 2xl:text-2xl">
           VX GLOBAL has made targeted investments in three categories. Brick and
           mortar retails, Web2 <br class="lt-lg:hidden" />
           Foodtech, Deeptech. Finally in Web3, Gamefi, Depin and Defi.
@@ -45,7 +45,7 @@ const [visible, container] = useVisible();
               )
             "
             v-bind="portfolio"
-            class="px-16 xl:px-22 h-full lt-lg:w-full text-black"
+            class="md:px-16 xl:px-22 h-full lt-lg:w-full text-black"
           />
         </div>
       </div>

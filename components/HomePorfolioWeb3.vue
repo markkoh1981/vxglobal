@@ -24,7 +24,7 @@ const [visible, container] = useVisible();
             : 'lt-md:invisible'
         "
         v-bind="portfolio"
-        class="text-black px-22"
+        class="text-black md:px-22"
       />
     </div>
   </div>

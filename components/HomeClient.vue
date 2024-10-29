@@ -20,7 +20,7 @@ const [visible, container] = useVisible();
       <CubeCard
         v-for="client in homeClients"
         v-bind="client"
-        class="text-black lt-md:min-w-sm lt-xl:min-w-md"
+        class="text-black lt-md:min-w-sm lt-xl:min-w-md 2xl:min-h-sm 3xl:min-h-md 3xl:max-w-xl 4xl:max-w-2xl"
         link-class="ml-auto"
       />
     </div>
