@@ -13,8 +13,8 @@ const [visible, container] = useVisible();
       <Logo
         :width="32"
         :height="32"
-        class="w-6 h-6 md:w-8 md:h-8 xl:w-16 xl:h-16"
-        textClass="text-xl z-10 xl:text-5xl"
+        class="w-6 h-6 md:w-8 md:h-8 xl:w-14 xl:w-14 4xl:w-16 4xl:h-16"
+        textClass="text-xl z-10 xl:text-xl 2xl:text-4xl 4xl:text-5xl"
       />
     </div>
     <LayoutNavigation class="md:flex-1" />

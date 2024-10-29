@@ -14,19 +14,15 @@ const [visible, container] = useVisible();
     </div>
     <div
       :class="visible ? 'animate-slide-in-up visible' : 'invisible'"
-      class="flex gap-x-4 overflow-x-scroll snap-x lt-md:px-4 lt-2xl:px-8"
+      class="flex gap-x-4 overflow-x-scroll snap-x lt-md:px-4 lt-2xl:px-8 xl:grid xl:grid-cols-3 md:gap-8"
+      style="--mask: url('/illustrations/il_box_parallelogram.png')"
     >
-      <div
+      <CubeCard
         v-for="client in homeClients"
-        class="flex-1 flex flex-col first:items-start items-center last:items-end"
-      >
-        <CubeCard
-          v-bind="client"
-          link-class="!ml-auto"
-          class="h-full rounded-md min-w-sm"
-          style="--mask: url('/icons/ic_box_parallelogram.svg#mask')"
-        />
-      </div>
+        v-bind="client"
+        class="text-black lt-md:min-w-sm lt-xl:min-w-md"
+        link-class="ml-auto"
+      />
     </div>
   </div>
 </template>

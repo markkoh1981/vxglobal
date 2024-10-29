@@ -5,9 +5,7 @@ defineProps<Card & { linkClass?: string }>();
 </script>
 
 <template>
-  <CubeEffect
-    class="flex flex-col space-y-2 md:space-y-4 bg-primary text-black px-8 py-4"
-  >
+  <CubeEffect class="box flex flex-col space-y-4 p-8 pt-8 pb-4">
     <div class="flex-1 flex flex-col space-y-2 md:space-y-4">
       <div class="flex items-center space-x-2">
         <NuxtImg
@@ -20,18 +18,16 @@ defineProps<Card & { linkClass?: string }>();
         <p class="text-sm font-bold md:text-base xl:text-xl">{{ name }}</p>
       </div>
       <div class="flex-1">
-        <p
-          class="text-sm !leading-relaxed md:text-sm xl:text-base"
-          v-html="description"
-        />
+        <p v-html="description" />
       </div>
     </div>
-    <div class="flex text-xs md:py-2">
+    <div
+      class="flex lt-md:text-xs md:text-base 2xl:text-xl 4xl:text-2xl"
+    >
       <NuxtLink
         :href="link"
         target="_blank"
         :class="linkClass"
-        class="md:ml-auto xl:ml-0"
       >
         {{ link.replaceAll("https://", "").replaceAll("/", "") }}
       </NuxtLink>

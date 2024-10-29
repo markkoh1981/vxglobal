@@ -4,7 +4,7 @@ const [visible, container] = useVisible();
 <template>
   <div
     ref="container"
-    class="relative flex flex-col lt-md:pb-8 md:relative md:h-md md:pt-16 lg:-translate-y-16 2xl:h-4xl 2xl:max-w-6/10 2xl:justify-end 2xl:pb-24"
+    class="relative flex flex-col lt-md:pb-8 md:relative md:h-md md:justify-end md:pt-16 lg:-translate-y-16 2xl:h-2xl 4xl:h-4xl 2xl:max-w-6/10  2xl:pb-24"
   >
     <div
       :class="visible ? 'animate-slide-in-left visible' : 'invisible'"

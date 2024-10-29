@@ -13,43 +13,38 @@ const [visible, container] = useVisible();
     </div>
     <div
       class="flex flex-col gap-y-4 overflow-x-scroll bg-small-parallelogram snap-x md:px-8 lg:px-16 md:flex-row md:gap-8 2xl:px-0 xl:grid xl:grid-cols-3"
+      style="--mask: url('/illustrations/il_xs_parallelogram.png')"
     >
-      <div
+      <CubeEffect
         v-for="(partner, index) in homePartners"
         :class="
           visible
             ? 'lt-md:even:animate-slide-in-right lt-md:odd:animate-slide-in-left lt-md:visible'
             : 'lt-md:invisible'
         "
-        class="flex first:justify-start justify-center last:justify-end"
+        class="flex flex-col space-y-4 p-8 h-50 md:text-black min-w-md"
       >
-        <CubeEffectWithBorder
-          class="flex flex-col text-sm p-4 lt-md:pt-8 bg-stone-900 text-white md:max-w-sm md:min-h-36 md:bg-primary md:text-black"
+        <div class="flex-1 flex items-center justify-center space-x-2">
+          <NuxtImg
+            :src="partner.logo"
+            :alt="partner.name"
+            width="48"
+            height="48"
+          />
+          <p
+            class="flex-1 lt-md:leading-tight"
+            v-html="partner.name"
+          />
+        </div>
+        <NuxtLink
+          :href="partner.link"
+          target="_blank"
+          class="lt-md:text-xs md:text-base 2xl:text-xl 4xl:text-2xl ml-auto"
+          :class="index === homePartners.length - 1 ? 'xl:px-16' : ''"
         >
-          <div class="flex-1 flex flex-col space-y-4">
-            <div class="flex-1 flex items-center justify-center space-x-2">
-              <NuxtImg
-                :src="partner.logo"
-                :alt="partner.name"
-                width="36"
-                height="36"
-              />
-              <p
-                class="flex-1 md:text-base leading-tight"
-                v-html="partner.name"
-              />
-            </div>
-            <NuxtLink
-              :href="partner.link"
-              target="_blank"
-              class="text-xs ml-auto"
-              :class="index === homePartners.length - 1 ? 'xl:px-16' : ''"
-            >
-              {{ partner.link.replaceAll("https://", "").replaceAll("/", "") }}
-            </NuxtLink>
-          </div>
-        </CubeEffectWithBorder>
-      </div>
+          {{ partner.link.replaceAll("https://", "").replaceAll("/", "") }}
+        </NuxtLink>
+      </CubeEffect>
     </div>
   </section>
 </template>

@@ -49,11 +49,11 @@ defineProps<Props>();
         <div class="flex space-x-4 md:space-x-8 md:text-base z-10">
           <img
             src="~/assets/icons/ic_book_a_call.svg"
-            class="w-36 lt-md:w-32 cursor-pointer 2xl:w-64"
+            class="w-46 lt-md:w-32 cursor-pointer 2xl:w-48 4xl:w-64"
           />
           <img
             src="~/assets/icons/ic_send_a_message.svg"
-            class="w-36 lt-md:w-32 cursor-pointer 2xl:w-64"
+            class="w-46 lt-md:w-32 cursor-pointer 2xl:w-48 4xl:w-64"
           />
         </div>
       </div>

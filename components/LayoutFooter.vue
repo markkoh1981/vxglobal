@@ -39,9 +39,9 @@ const [visible, container] = useVisible();
       >
         <div class="flex flex-col space-y-2">
           <div>
-            <h1>Menu</h1>
+            <h1 class="text-xl xl:text-2xl 2xl:text-3xl 4xl:text-4xl">Menu</h1>
           </div>
-          <div class="flex flex-col md:text-base 2xl:text-2xl">
+          <div class="flex flex-col">
             <NuxtLink
               v-for="navigation in layoutNavigations"
               :href="navigation.link"
@@ -52,9 +52,9 @@ const [visible, container] = useVisible();
         </div>
         <div class="flex flex-col space-y-2">
           <div>
-            <h1>Socials</h1>
+            <h1 class="text-xl xl:text-2xl 2xl:text-3xl 4xl:text-4xl">Socials</h1>
           </div>
-          <div class="flex flex-col md:text-base 2xl:text-2xl">
+          <div class="flex flex-col">
             <NuxtLink
               v-for="navigation in layoutSocials"
               :href="navigation.link"

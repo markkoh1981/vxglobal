@@ -10,9 +10,9 @@ const [visible, container] = useVisible();
     >
       <div
         :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
-        class="2xl:w-1/3 bg-bubble lt-2xl:absolute lt-2xl:inset-0 lt-md:hidden"
+        class="bg-bubble absolute inset-0 lt-md:hidden"
       />
-      <div class="flex-1 flex z-10 lt-md:px-4 xl:gap-x-16 lt-2xl:justify-end">
+      <div class="flex-1 flex z-10 lt-md:px-4 xl:gap-x-16 md:justify-end">
         <div
           v-for="(block, blockIndex) in homeFeatures"
           :key="blockIndex"
@@ -21,8 +21,12 @@ const [visible, container] = useVisible();
               ? 'lt-xl:first:animate-slide-in-left lt-xl:last:animate-slide-in-right lt-xl:visible'
               : 'lt-xl:invisible'
           "
-          class="lt-xl:flex-1 flex flex-col gap-y-16 bg-bubble-transparent z-10 last:mt-52 md:gap-y-24 lt-2xl:max-w-sm"
+          class="relative lt-xl:flex-1 flex flex-col gap-y-16 bg-bubble-transparent z-10 last:mt-58 2xl:last:mt-64 md:gap-y-24"
         >
+          <div
+            v-if="[0].includes(blockIndex)"
+            class="absolute inset-0 -left-24 bg-black/90 blur-3xl"
+          />
           <div
             v-for="(feature, index) in block"
             :key="index"
@@ -33,15 +37,10 @@ const [visible, container] = useVisible();
             "
             class="relative flex flex-col"
           >
-            <div
-              v-if="[3, 1].includes(feature.index)"
-              class="absolute inset-0 -left-24 bg-black blur-3xl"
-            />
-
             <div class="flex flex-col space-y-4 px-4 md:px-8 md:py-4 z-10">
               <div>
                 <ButtonFill
-                  class="px-6 py-1 text-xs md:text-sm md:px-10 md:py-4"
+                  class="px-6 py-1 text-base md:text-sm md:px-10 md:py-4 2xl:text-xl 2xl:px-16"
                 >
                   <p class="text-black font-bold">0{{ feature.index }}</p>
                 </ButtonFill>

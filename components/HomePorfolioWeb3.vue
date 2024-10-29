@@ -13,22 +13,19 @@ const [visible, container] = useVisible();
       <h1 class="text-base font-bold md:text-lg xl:text-2xl">Web 3.0</h1>
     </div>
     <div
-      class="flex gap-4 px-4 lt-sm:flex-col md:px-8 lg:px-16 md:overflow-x-scroll md:snap-x 2xl:px-0 xl:grid xl:grid-cols-2 md:gap-16"
+      class="flex gap-4 px-4 flex-col md:px-8 lg:px-16 md:overflow-x-scroll md:snap-x 2xl:px-0 xl:grid xl:grid-cols-2 md:gap-16"
+      style="--mask: url('/illustrations/il_plain_parallelogram.png')"
     >
-      <div
+      <CubeCard
         v-for="portfolio in homeWeb3"
-        class="flex last:justify-end"
         :class="
           visible
             ? 'lt-md:odd:animate-slide-in-left lt-md:even:animate-slide-in-right lt-md:visible'
             : 'lt-md:invisible'
         "
-      >
-        <CubeCard
-          v-bind="portfolio"
-          class="md:min-w-xl"
-        />
-      </div>
+        v-bind="portfolio"
+        class="text-black px-22"
+      />
     </div>
   </div>
 </template>

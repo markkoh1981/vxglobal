@@ -26,27 +26,27 @@ const [visible, container] = useVisible();
           Foodtech, Deeptech. Finally in Web3, Gamefi, Depin and Defi.
         </p>
       </div>
-      <div class="flex flex-col space-y-4 md:space-y-8">
+      <div
+        class="flex flex-col space-y-4 md:space-y-8"
+        style="--mask: url('/illustrations/il_plain_parallelogram.png')"
+      >
         <div
           v-for="(block, index) in homePortfolios"
-          class="shrink-0 flex flex-col gap-y-4 lt-md:justify-center lt-md:items-center last:md:flex md:items-center md:justify-center xl:grid xl:grid-cols-2 xl:gap-16"
+          class="shrink-0 flex flex-col gap-y-4 lt-md:justify-center lt-md:items-center last:md:flex md:items-center md:justify-center lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16"
         >
-          <div
-            v-for="(portfolio, index) in block"
+          <CubeCard
+            v-for="portfolio in block"
             :class="
               clsx(
-                index % 2 === 1 ? 'flex  md:justify-end lt-md:w-full' : '',
+                { 'w-6/10': index === homePortfolios.length - 1 },
                 visible
                   ? 'odd:animate-slide-in-left even:animate-slide-in-right visible'
                   : 'invisible'
               )
             "
-          >
-            <CubeCard
-              v-bind="portfolio"
-              class="h-full md:min-w-[38rem] min-w-full"
-            />
-          </div>
+            v-bind="portfolio"
+            class="px-16 xl:px-22 h-full lt-lg:w-full text-black"
+          />
         </div>
       </div>
     </div>
