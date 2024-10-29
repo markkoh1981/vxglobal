@@ -9,12 +9,12 @@ const [visible, container] = useVisible();
     id="services"
     class="relative flex flex-col space-y-8 2xl:w-9/10 2xl:self-center"
   >
-    <div class="lt-md:text-base font-bold px-4 md:px-8 2xl:px-0">
+    <div class="lt-md:text-base font-bold px-2 md:px-8 2xl:px-0">
       <h1>Advisory Clients</h1>
     </div>
     <div
       :class="visible ? 'animate-slide-in-up visible' : 'invisible'"
-      class="flex gap-x-4 overflow-x-scroll snap-x lt-md:px-4 lt-2xl:px-8 xl:grid xl:grid-cols-3 md:gap-8"
+      class="flex gap-x-4 overflow-x-scroll snap-x lt-md:px-2 lt-2xl:px-8 xl:grid xl:grid-cols-3 md:gap-8"
       style="--mask: url('/illustrations/il_box_parallelogram.png')"
     >
       <CubeCard

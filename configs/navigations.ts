@@ -8,12 +8,12 @@ export const layoutNavigations: Navigation[] = [
   {
     name: "Home",
     link: "/",
-    icon: "i-mdi:home-outline",
+    icon: "i-octicon:home-24",
   },
   {
     name: "About us",
     link: "/about-us",
-    icon: "i-mdi:alert-circle-outline",
+    icon: "i-octicon:info-24",
   },
   {
     name: "Portfolio",

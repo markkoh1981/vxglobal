@@ -4,15 +4,15 @@ const [visible, container] = useVisible();
 <template>
   <div
     ref="container"
-    class="relative  flex flex-col md:relative md:h-md md:justify-end md:pt-16 lg:-translate-y-16 2xl:h-2xl 4xl:h-4xl 2xl:max-w-6/10 2xl:pb-24"
+    class="relative  flex flex-col md:relative md:h-md md:justify-end md:pt-16 lg:-translate-y-16 2xl:h-2xl 4xl:h-4xl 2xl:w-9/10 2xl:pb-24"
   >
     <div
       :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
       class="relative flex flex-col 2xl:w-9/10 2xl:self-center"
     >
-      <div class="absolute inset-0 bg-black max-w-7/10 lt-md:max-w-xs blur-3xl" />
+      <div class="absolute inset-0 bg-black max-w-7/10 blur-2xl lt-md:max-w-xs md:blur-3xl" />
       <div
-        class="flex flex-col space-y-4 z-10 px-4 z-10 lt-md:pb-8 md:px-8 lg:px-16 md:space-y-4 2xl:px-0"
+        class="flex flex-col space-y-4 z-10 px-2 lt-md:pb-8 md:px-8 lg:px-16 md:space-y-4 2xl:px-0"
       >
         <div
           class="leading-relaxed lt-md:max-w-xs md:max-w-auto md:leading-loose"

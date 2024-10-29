@@ -171,10 +171,35 @@ svg {
   }
 }
 
-.bg-fluid-parallelogram {
-  background: url("/assets/icons/ic_fluid_parallogram.svg") no-repeat;
-  background-position: top right;
-  background-size: 100% 100%;
+.bg-coins {
+  background: url("/illustrations/il_coins.png") no-repeat;
+  background-position: right bottom;
+  background-size: 60% 40%;
+}
+
+@screen md {
+  .bg-coins {
+    background: url("/illustrations/il_coins.png") no-repeat;
+    background-position: right top;
+    background-size: 75% 100%;
+  }
+  
+}
+@screen lg {
+  .bg-coins {
+    background: url("/illustrations/il_coins.png") no-repeat;
+    background-position: right bottom;
+    background-size: 60% 100%;
+  }
+  
+}
+
+@screen 4xl {
+  .bg-coins {
+    background: url("/illustrations/il_coins.png") no-repeat;
+    background-position: right bottom;
+    background-size: 40% 100%;
+  }
 }
 
 *::-webkit-scrollbar {
@@ -198,14 +223,4 @@ svg {
     )
     1;
   border-image-slice: 1 0 0 1;
-}
-
-.bg-small-parallelogram {
-  --mask: url("/icons/ic_small_parallelogram.svg#mask");
-}
-
-@screen lt-md {
-  .bg-small-parallelogram {
-    --mask: url("/icons/ic_small_parallelogram_outline.svg#mask");
-  }
 }

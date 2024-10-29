@@ -12,7 +12,7 @@ const [visible, container] = useVisible();
         :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
         class="bg-bubble absolute inset-0 lt-md:hidden"
       />
-      <div class="flex-1 flex z-10 lt-md:px-4 xl:gap-x-16 md:justify-end">
+      <div class="flex-1 flex z-10 lt-md:px-2 xl:gap-x-16 md:justify-end">
         <div
           v-for="(block, blockIndex) in homeFeatures"
           :key="blockIndex"
@@ -37,7 +37,7 @@ const [visible, container] = useVisible();
             "
             class="relative flex flex-col"
           >
-            <div class="flex flex-col space-y-4 px-4 md:px-8 md:py-4 z-10">
+            <div class="flex flex-col space-y-4 px-2 md:px-8 md:py-4 z-10">
               <div>
                 <ButtonFill
                   class="px-6 py-1  md:px-10 md:py-4 2xl:px-16"
@@ -66,7 +66,7 @@ const [visible, container] = useVisible();
         </div>
       </div>
     </div>
-    <div class="flex flex-col px-4 py-8">
+    <div class="flex flex-col px-2 py-8">
       <p class="capitalize lt-md:leading-relaxed leading-loose text-center">
         VX GLOBAL offers a full spectrum of services to help businesses
         <br class="lt-md:hidden" />

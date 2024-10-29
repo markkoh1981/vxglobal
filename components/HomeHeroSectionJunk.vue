@@ -5,7 +5,7 @@ const [visible, container] = useVisible();
   <div
     ref="container"
     :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
-    class="absolute bottom-0 flex flex-col space-y-8 justify-end lt-md:left-0 md:-bottom-8 xl:bottom-24 lt-md:items-center lt-md:px-4 lt-2xl:px-16 md:space-y-16 2xl:w-9/10 2xl:self-center 2xl:-bottom-24"
+    class="absolute bottom-0 flex flex-col space-y-8 justify-end lt-md:left-0 md:-bottom-8 xl:bottom-24 lt-md:items-center lt-md:px-2 lt-2xl:px-16 md:space-y-16 2xl:w-9/10 2xl:self-center 2xl:-bottom-8"
   >
     <button class="flex items-center md:space-x-2">
       <img

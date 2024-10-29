@@ -11,7 +11,7 @@ const [visible, container] = useVisible();
     style="--mask: url('/icons/ic_plain_parallelogram.svg#mask')"
   >
     <div
-      class="flex flex-col space-y-8 lt-md:px-4 lt-lg:px-8 lt-2xl:px-16 2xl:w-9/10 2xl:self-center"
+      class="flex flex-col space-y-8 lt-md:px-2 lt-lg:px-8 lt-2xl:px-16 2xl:w-9/10 2xl:self-center"
     >
       <div
         :class="visible ? 'animate-slide-in-down visible' : 'invisible'"

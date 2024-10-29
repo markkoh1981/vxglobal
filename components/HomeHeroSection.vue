@@ -25,7 +25,7 @@ defineProps<Props>();
       <div
         class="relative flex flex-col justify-center items-center space-y-4 md:space-y-8 md:h-sm 2xl:h-xl"
       >
-        <div class="absolute inset-0 bg-black blur-3xl" />
+        <div class="absolute inset-0 bg-black blur-xl md:blur-3xl" />
 
         <div class="flex flex-col md:space-y-4 z-10">
           <div class="flex flex-col md:space-y-2 text-2xl font-black md:text-4xl xl:text-6xl 2xl:text-7xl font-tommy">
@@ -46,14 +46,14 @@ defineProps<Props>();
             Connecting Capital, Talent, and Opportunity
           </p>
         </div>
-        <div class="flex space-x-4 md:space-x-8 md:text-base z-10">
+        <div class="flex md:space-x-8 md:text-base z-10">
           <img
-            src="~/assets/icons/ic_book_a_call.svg"
-            class="w-46 lt-md:w-32 cursor-pointer 2xl:w-48 4xl:w-64"
+            src="/icons/ic_book_a_session.png"
+            class="w-46 lt-md:w-40 cursor-pointer 2xl:w-48 4xl:w-64"
           />
           <img
-            src="~/assets/icons/ic_send_a_message.svg"
-            class="w-46 lt-md:w-32 cursor-pointer 2xl:w-48 4xl:w-64"
+            src="/icons/ic_seeking_funding.png"
+            class="w-46 lt-md:w-40 cursor-pointer 2xl:w-48 4xl:w-64"
           />
         </div>
       </div>

@@ -50,6 +50,8 @@ export default defineConfig({
     "i-mdi:email",
     "i-mdi:home-outline",
     "i-mdi:alert-circle-outline",
+    "i-octicon:home-24",
+    "i-octicon:info-24",
     "lt-xl:hidden",
   ],
 });

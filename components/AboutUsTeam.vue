@@ -4,13 +4,13 @@ const [visible, container] = useVisible();
 </script>
 <template>
   <div class="relative flex flex-col bg-belt">
-    <div class="flex flex-col space-y-16 2xl:w-9/10 2xl:self-center">
+    <div class="flex flex-col space-y-8 md:space-y-16 2xl:w-9/10 2xl:self-center">
       <div class="text-center">
-        <h1>Meet Our Team</h1>
+        <h1 class="lt-md:text-xl !font-[Clash+Display] font-bold">Meet Our Founder and Team</h1>
       </div>
       <div
         ref="container"
-        class="lt-md:grid lt-md:grid-cols-2 flex space-x-16 items-center justify-center"
+        class="flex space-x-16 items-center justify-center"
       >
         <div
           v-for="team in aboutUsTeams"
@@ -31,8 +31,8 @@ const [visible, container] = useVisible();
               class="w-40 xl:w-64"
             />
           </div>
-          <div class="flex flex-col space-y-2 text-center">
-            <h1 class="lt-md:text-xs font-medium">{{ team.name }}</h1>
+          <div class="flex flex-col md:space-y-2 text-center">
+            <h1 class="font-medium">{{ team.name }}</h1>
             <p class="text-[12px] md:text-base text-white/75 xl:text-2xl">{{ team.title }}</p>
           </div>
         </div>
