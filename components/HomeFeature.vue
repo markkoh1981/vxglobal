@@ -42,7 +42,14 @@ const [visible, container] = useVisible();
                 <ButtonFill
                   class="px-6 py-1  md:px-10 md:py-4 2xl:px-16"
                 >
-                  <p class="text-black font-bold">0{{ feature.index }}</p>
+                  <p class="text-black font-bold">
+                    <span class="lt-md:hidden">
+                      0{{ feature.index }}
+                    </span>
+                    <span class="md:hidden">
+                      0{{ blockIndex > 0 ? 2 + index + 1 : (1 * index) + 1 }}
+                    </span>
+                  </p>
                 </ButtonFill>
               </div>
               <div class="flex-1 space-y-2">

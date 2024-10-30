@@ -19,12 +19,12 @@ export const layoutSocials: Social[] = [
   {
     name: "Email",
     icon: "i-mdi:email",
-    link: "",
+    link: "mailto:mark@transendentconcepts.com",
   },
   {
     name: "Twitter",
     icon: "i-fa-brands:twitter",
-    link: "",
+    link: "https://x.com/VXglobalSG",
   },
 ];
 

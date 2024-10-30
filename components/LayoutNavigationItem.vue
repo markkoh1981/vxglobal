@@ -15,11 +15,16 @@ const active = computed(
   >
     <div
       v-if="active && icon"
-      class="bg-white/10 border border-white/60 rounded p-0.5 md:p-1"
+      class="border rounded p-0.5 md:p-1"
+      :class="
+        active
+          ? 'border-white text-white'
+          : 'bg-white/10 border-white/60 text-white/90'
+      "
     >
       <div
         :class="icon"
-        class="bg-white/90 2xl:text-2xl"
+        class="2xl:text-2xl"
       />
     </div>
     <span

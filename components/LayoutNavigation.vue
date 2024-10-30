@@ -57,9 +57,9 @@ onClickOutside(navigation, () => (open.value = false));
           v-for="social in layoutSocials"
           target="_blank"
           :href="social.link"
-          class="p-1.5 rounded border border-white/40 bg-white/10"
+          class="p-2 rounded border border-white/40 bg-white/10"
         >
-          <div :class="social.icon" />
+          <div :class="social.icon" class="lt-md:text-base"/>
         </NuxtLink>
       </div>
     </div>

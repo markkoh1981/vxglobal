@@ -28,10 +28,10 @@ defineProps<Props>();
         <div class="absolute inset-0 bg-black blur-xl md:blur-3xl" />
 
         <div class="flex flex-col md:space-y-4 z-10">
-          <div class="flex flex-col md:space-y-2 text-2xl font-black md:text-4xl xl:text-6xl 2xl:text-7xl font-tommy">
-            <h1>
-              Accelerating Growth <br />
-            </h1>
+          <div
+            class="flex flex-col md:space-y-2 text-2xl font-black md:text-4xl xl:text-6xl 2xl:text-7xl font-tommy"
+          >
+            <h1>Accelerating Growth <br /></h1>
             <div class="flex items-center justify-center space-x-2">
               <h1>in Southeast Asia</h1>
               <img
@@ -47,14 +47,24 @@ defineProps<Props>();
           </p>
         </div>
         <div class="flex md:space-x-8 md:text-base z-10">
-          <img
-            src="/icons/ic_book_a_session.png"
-            class="w-46 lt-md:w-40 cursor-pointer 2xl:w-48 4xl:w-64"
-          />
-          <img
-            src="/icons/ic_seeking_funding.png"
-            class="w-46 lt-md:w-40 cursor-pointer 2xl:w-48 4xl:w-64"
-          />
+          <NuxtLink
+            href="https://forms.gle/ow74aDCWgf59KKZ37"
+            target="_blank"
+          >
+            <img
+              src="/icons/ic_book_a_session.png"
+              class="w-46 lt-md:w-40 cursor-pointer 2xl:w-48 4xl:w-64"
+            />
+          </NuxtLink>
+          <NuxtLink
+            href="https://forms.gle/K2LTDFmV19RCkriC7"
+            target="_blank"
+          >
+            <img
+              src="/icons/ic_seeking_funding.png"
+              class="w-46 lt-md:w-40 cursor-pointer 2xl:w-48 4xl:w-64"
+            />
+          </NuxtLink>
         </div>
       </div>
     </div>

@@ -48,8 +48,6 @@ export default defineConfig({
     "i-fa-brands:twitter",
     "i-fa-brands:telegram-plane",
     "i-mdi:email",
-    "i-mdi:home-outline",
-    "i-mdi:alert-circle-outline",
     "i-octicon:home-24",
     "i-octicon:info-24",
     "lt-xl:hidden",

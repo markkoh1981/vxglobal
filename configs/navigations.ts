@@ -7,12 +7,12 @@ export type Navigation = {
 export const layoutNavigations: Navigation[] = [
   {
     name: "Home",
-    link: { path: "/" },
+    link: { path: "/", hash: "" },
     icon: "i-octicon:home-24",
   },
   {
     name: "About us",
-    link: { path: "/about-us" },
+    link: { path: "/about-us", hash: "" },
     icon: "i-octicon:info-24",
   },
   {
