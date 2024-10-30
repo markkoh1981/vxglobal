@@ -27,12 +27,13 @@ const [visible, container] = useVisible();
         </p>
       </div>
       <div
-        class="flex flex-col space-y-4 md:space-y-8"
+        class="relative flex flex-col space-y-4 md:space-y-8"
         style="--mask: url('/illustrations/il_plain_parallelogram.png')"
       >
+        <div class="absolute inset-0 bg-black/80 blur-3xl" />
         <div
           v-for="(block, index) in homePortfolios"
-          class="shrink-0 flex flex-col gap-y-4 lt-md:justify-center lt-md:items-center last:md:flex md:items-center md:justify-center lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16"
+          class="shrink-0 flex flex-col gap-y-4 z-10 lt-md:justify-center lt-md:items-center last:md:flex md:items-center md:justify-center lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16"
         >
           <CubeCard
             v-for="portfolio in block"

@@ -9,7 +9,19 @@ import { breakpointsTailwind } from "@vueuse/core";
 const [visible, container] = useVisible();
 
 const breakpoints = useBreakpoints(breakpointsTailwind);
-const isSmallScreen = computed(() => breakpoints.isSmallerOrEqual("sm"));
+const isSmallScreen = ref(breakpoints.isSmallerOrEqual("lg"));
+
+const itemSize = computed(() => (isSmallScreen.value ? 400 : 560));
+
+const resizeFn = () => {
+  isSmallScreen.value = breakpoints.isSmallerOrEqual("lg");
+};
+
+onMounted(() => {
+  window.addEventListener("resize", resizeFn);
+});
+
+onUnmounted(() => window.removeEventListener("resize", resizeFn));
 </script>
 
 <template>
@@ -26,15 +38,16 @@ const isSmallScreen = computed(() => breakpoints.isSmallerOrEqual("sm"));
     </div>
     <VueMarqueeSlider
       id="marquee-slider"
+      :key="itemSize"
       :space="32"
-      :width="isSmallScreen ? 400 : 560"
+      :width="itemSize"
       style="--mask: url('/illustrations/il_box_parallelogram.png')"
-      :speed="10000"
+      :speed="30000"
     >
       <CubeCard
         v-for="client in homeClients"
         v-bind="client"
-        class="text-black max-w-xl lt-md:max-w-xs md:min-h-sm"
+        class="text-black max-w-xl lt-md:max-w-xs lg:min-h-sm"
         link-class="ml-auto"
       />
     </VueMarqueeSlider>

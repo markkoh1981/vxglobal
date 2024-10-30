@@ -12,7 +12,7 @@ const [visible, container] = useVisible();
         :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
         class="bg-bubble absolute inset-0 lt-md:hidden"
       />
-      <div class="flex-1 flex z-10 lt-md:flex-col lt-md:space-y-8 lt-md:px-2 xl:gap-x-16 md:justify-end ">
+      <div class="flex-1 flex z-10 lt-md:flex-col lt-md:px-2 xl:gap-x-16 md:justify-end ">
         <div
           v-for="(block, blockIndex) in homeFeatures"
           :key="blockIndex"
@@ -35,9 +35,9 @@ const [visible, container] = useVisible();
                 ? 'last:md:animate-slide-in-up first:md:animate-slide-in-down md:visible'
                 : 'md:invisible'
             "
-            class="relative flex flex-col "
+            class="relative flex flex-col"
           >
-            <div class="flex flex-col space-y-4 px-2 lt-md:py-8 md:px-8 md:py-4  z-10">
+            <div class="flex flex-col space-y-4 px-2  z-10 lt-md:border-b lt-md:py-8 md:px-8 md:py-4">
               <div>
                 <ButtonFill
                   class="px-6 py-1  md:px-10 md:py-4 2xl:px-16"
@@ -52,7 +52,7 @@ const [visible, container] = useVisible();
                 <ul
                   v-for="(description, index) in feature.descriptions"
                   :key="index"
-                  class="flex-1 flex flex-col lt-md:pb-8 md:px-2"
+                  class="flex-1 flex flex-col md:px-2"
                 >
                   <li
                     class="list-disc lt-md:leading-relaxed  lt-md:text-sm md:text-base lg:text-xl 3xl:text-3xl text-white/70 leading-loose"
@@ -60,7 +60,7 @@ const [visible, container] = useVisible();
                   />
                 </ul>
               </div>
-              <hr class="border-primary" />
+              <hr class="border-primary lt-md:hidden" />
             </div>
           </div>
         </div>

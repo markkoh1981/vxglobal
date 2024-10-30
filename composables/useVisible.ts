@@ -13,5 +13,5 @@ export const useVisible = (container?: Ref<HTMLElement | null>) => {
 
   onUnmounted(stop);
 
-  return [visible, element];
+  return [visible, element] as const;
 };
