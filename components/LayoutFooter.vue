@@ -31,10 +31,6 @@ const [visible, container] = useVisible();
             <br class="lt-md:hidden" />
             funds, deal flow and operational strategies.
           </p>
-          <div class="flex items-center space-x-2 lt-md:text-xs">
-            <div class="i-mdi:email-outline lt-md:text-base" />
-            <p>mark@transendentconcepts.com</p>
-          </div>
         </div>
       </div>
       <div
@@ -83,9 +79,9 @@ const [visible, container] = useVisible();
       class="flex flex-col space-y-8"
     >
       <hr class="border-white/50" />
-      <div>
-        <p class="text-white/50">
-          Copyright © 2024 VX Global . All rights reserved
+      <div class="flex flex-col">
+        <p class="text-white/50 text-center">
+          Copyright © 2011-2024 VX Global Pte Ltd
         </p>
       </div>
     </div>
