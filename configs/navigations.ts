@@ -1,26 +1,26 @@
 export type Navigation = {
   name: string;
-  link: string;
+  link: { hash?: string; path: string };
   icon?: string;
 };
 
 export const layoutNavigations: Navigation[] = [
   {
     name: "Home",
-    link: "/",
+    link: { path: "/" },
     icon: "i-octicon:home-24",
   },
   {
     name: "About us",
-    link: "/about-us",
+    link: { path: "/about-us" },
     icon: "i-octicon:info-24",
   },
   {
     name: "Portfolio",
-    link: "/#portfolio",
+    link: { path: "/", hash: "#portfolio" },
   },
   {
     name: "Services",
-    link: "/#services",
+    link: { path: "/", hash: "#services" },
   },
 ];

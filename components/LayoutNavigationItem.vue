@@ -1,11 +1,15 @@
 <script lang="ts" setup>
-const props = defineProps<{ name: string; link: string; icon?: string }>();
+import type { Navigation } from "~/configs/navigations";
+
+const props = defineProps<Navigation>();
 const route = useRoute();
-const active = computed(() => route.fullPath === props.link);
+const active = computed(
+  () => route.fullPath === props.link.path && route.hash === props.link.hash
+);
 </script>
 <template>
   <NuxtLink
-    :href="link"
+    :to="link"
     class="flex items-center space-x-2 p-4 md:py-2 hover:text-white"
     :class="active ? 'text-white' : 'text-white/75'"
   >

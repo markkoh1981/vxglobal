@@ -10,8 +10,8 @@ export const homeFeatures: Feature[][] = [
       index: 1,
       title: "Market entry consultancy",
       descriptions: [
-        "Offering comprehensive analysis of <br className='lt-2xl:hidden' /> target audiences and competitive <br />landscapes within ASEAN.",
-        "ASEAN is one of the most fragmented<br className='lt-2xl:hidden' />markets for business development,<br className='lt-2xl:hidden' />VX helps to bridge the gap with best practices.",
+        "Offering comprehensive analysis of <br className='lt-2xl:hidden' /> target audiences and competitive <br  className='lt-md:hidden'/>landscapes within ASEAN.",
+        "ASEAN is one of the most fragmented <br className='lt-2xl:hidden' />markets for business development,<br className='lt-2xl:hidden' />VX helps to bridge the gap with best practices.",
       ],
     },
     {

@@ -8,5 +8,10 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
   },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  },
   components: ["~/components/widgets", "~/components/"],
 });
