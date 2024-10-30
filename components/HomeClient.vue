@@ -27,7 +27,6 @@ onUnmounted(() => window.removeEventListener("resize", resizeFn));
 <template>
   <div
     ref="container"
-    id="services"
     class="relative flex flex-col space-y-8"
     :class="visible ? 'animate-slide-in-up visible' : 'invisible'"
   >
