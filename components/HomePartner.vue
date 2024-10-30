@@ -42,7 +42,11 @@ const [visible, container] = useVisible();
           class="lt-md:text-xs md:text-base 2xl:text-xl 4xl:text-2xl ml-auto"
           :class="index === homePartners.length - 1 ? 'xl:px-16' : ''"
         >
-          {{ partner.link.replaceAll("https://", "").replaceAll("/", "") }}
+          {{
+            (partner.alias ?? partner.link)
+              .replaceAll("https://", "")
+              .replaceAll("/", "")
+          }}
         </NuxtLink>
       </CubeEffect>
     </div>

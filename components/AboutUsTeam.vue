@@ -39,7 +39,11 @@ const [visible, container] = useVisible();
             <div class="flex items-center justify-center">
               <h1 class="font-medium">{{ team.name }}</h1>
 
-              <NuxtLink class="p-2">
+              <NuxtLink
+                :href="team.linkedIn"
+                target="_blank"
+                class="p-2"
+              >
                 <div
                   class="i-fa-brands:linkedin hover:text-white/50 lt-md:text-xl"
                 />

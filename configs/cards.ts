@@ -2,6 +2,7 @@ export type Card = Readonly<{
   logo: string;
   name: string;
   link: string;
+  alias?: string;
   category?: string;
   description: string;
 }>;
@@ -107,7 +108,8 @@ export const homePartners: Omit<Card, "description" | "category">[] = [
   },
   {
     name: "ARC Accelerator (Cambodia)",
-    link: "https://arcaccelerator.com",
+    alias: "https://arcaccelerator.com",
+    link: "https://www.aupptechcenter.com/what-is-arc-start-up-accelerator/",
     logo: "/icons/ic_arc.png",
   },
 ];
