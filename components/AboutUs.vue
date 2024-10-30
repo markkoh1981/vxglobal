@@ -2,13 +2,13 @@
 const [visible, container] = useVisible();
 </script>
 <template>
-  <div class="flex flex-col bg-coins md:h-xl">
+  <div class="relative flex flex-col md:h-xl">
     <div
       ref="container"
       :class="visible ? 'animate-slide-in-left visible' : 'invisible'"
       class="flex flex-col space-y-8 md:space-y-16 px-2 md:px-8 lg:px-16 2xl:px-0 2xl:w-9/10 2xl:self-center"
     >
-      <div  class="relative flex flex-col">
+      <div class="relative flex flex-col">
         <div class="absolute inset-0 bg-black/80 blur-3xl" />
         <div class="flex flex-col space-y-4 z-10">
           <div>
@@ -20,29 +20,33 @@ const [visible, container] = useVisible();
           </div>
           <div class="flex">
             <p class="leading-relaxed md:leading-loose">
-              Founded in 2011, VX GLOBAL began as a distribution
-              <br class="lt-md:hidden 2xl:hidden" />
-              company in <br class="lt-2xl:hidden" />
-              the FMCG (Fast Moving Consumer Goods)
-              <br class="lt-md:hidden 2xl:hidden" />
-              segment in Singapore.
+              Founded in 2011, VX GLOBAL began as a distribution company
+              <br class="md:hidden" />
+              in the FMCG <br class="lt-md:hidden" />
+              (Fast Moving Consumer Goods) segment in Singapore.
+              <br class="lt-sm:hidden" />
+              The company has since grown with its primary business pivoting
+              <br class="lt-sm:hidden 2xl:hidden" />
+              to Fund,
               <br class="lt-2xl:hidden" />
-              The company has since grown with
-              <br class="lt-md:hidden 2xl:hidden" />
-              its primary business pivoting
+              services and portfolio management, it is also involved in
+              <br class="lt-sm:hidden 2xl:hidden" />
+              the acceleration
               <br class="lt-2xl:hidden" />
-              to Fund, services and portfolio
-              <br class="lt-md:hidden 2xl:hidden" />
-              management, it is also
-              <br class="lt-2xl:hidden" />
-              involved in the acceleration of startups
-              <br class="lt-md:hidden 2xl:hidden" />
-              across Southeast Asia.
+              of startups across Southeast Asia.
             </p>
           </div>
         </div>
       </div>
-      <TextRotateJunk />
+      <TextRotateJunk class="" />
+    </div>
+    <div
+      class="absolute -right-8 lt-md:-bottom-1/2 md:-right-12% inset-y-0 3xl:-right-16% 3xl:-bottom-16 3xl:top-24 w-7/10"
+    >
+      <NuxtImg
+        src="/illustrations/il_coins.png"
+        class="-rotate-5 object-contain w-full h-full"
+      />
     </div>
   </div>
 </template>

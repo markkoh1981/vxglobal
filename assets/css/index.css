@@ -174,15 +174,7 @@ svg {
 .bg-coins {
   background: url("/illustrations/il_coins.png") no-repeat;
   background-position: right bottom;
-  background-size: 60% 45%;
-}
-
-@screen sm {
-  .bg-coins {
-    background: url("/illustrations/il_coins.png") no-repeat;
-    background-position: right bottom;
-    background-size: 60% 80%;
-  }
+  background-size: 50% 50%;
 }
 
 @screen md {
@@ -196,23 +188,17 @@ svg {
   .bg-coins {
     background: url("/illustrations/il_coins.png") no-repeat;
     background-position: right bottom;
-    background-size: 60% 100%;
+    background-size: 80% 100%;
   }
 }
 
-@screen xl {
-  .bg-coins {
-    background: url("/illustrations/il_coins.png") no-repeat;
-    background-position: right bottom;
-    background-size: 50% 100%;
-  }
-}
-
-@screen 4xl {
-  .bg-coins {
-    background: url("/illustrations/il_coins.png") no-repeat;
-    background-position: right bottom;
-    background-size: 40% 100%;
+@screen 3xl {
+  @screen lg {
+    .bg-coins {
+      background: url("/illustrations/il_coins.png") no-repeat;
+      background-position: right bottom;
+      background-size: 100% 100%;
+    }
   }
 }
 

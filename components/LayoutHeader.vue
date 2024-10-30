@@ -6,7 +6,7 @@ const [visible, container] = useVisible();
   <header
     ref="container"
     :class="visible ?  'animate-slide-in-down visible' : 'invisible'"
-    class="flex items-center mx-4 py-6 md:mx-8 lg:mx-16 2xl:w-9/10 2xl:self-center"
+    class="flex items-center py-4 mx-2 md:mx-4 md:py-6 md:mx-8 lg:mx-16 2xl:w-9/10 2xl:self-center"
   >
     <div class="z-10">
       <div class="absolute w-64 h-24 -top-4  bottom-0 bg-black blur-2xl" />
