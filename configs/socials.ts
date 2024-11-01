@@ -8,13 +8,13 @@ export const layoutSocials: Social[] = [
   {
     name: "LinkedIn",
     icon: "i-fa-brands:linkedin-in",
-    link: "",
+    link: "https://www.linkedin.com/company/vxglobalsg/?viewAsMember=true",
   },
   {
     name: "Telegram",
 
     icon: "i-fa-brands:telegram-plane",
-    link: "",
+    link: "https://t.me/vxglobal",
   },
   {
     name: "Email",
