@@ -17,6 +17,7 @@ useHead({
 useSeoMeta({
   title: "VxGlobal | Accelerating Growth in Southeast Asia",
   description: "Dealflow, business development and portfolio management",
+  ogImage: "https://vxglobal.vercel.app/screenshot.png"
 });
 </script>
 <template>
