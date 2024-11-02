@@ -15,7 +15,7 @@ useHead({
 });
 
 useSeoMeta({
-  title: "VxGlobal | Building a Strong Management System Across the Globe",
+  title: "VxGlobal | Accelerating Growth in Southeast Asia",
   description: "Dealflow, business development and portfolio management",
 });
 </script>
