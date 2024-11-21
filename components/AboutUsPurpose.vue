@@ -20,7 +20,7 @@ const [visible, container] = useVisible();
         </div>
         <p class="leading-relaxed md:leading-loose">
           VX GLOBAL is a holding entity for its own portfolio investments. Its
-          key services includesxcels management consultancy, providing tailored
+          key services includes excels management consultancy, providing tailored
           solutions for market entry, capital sourcing and deployment for funds,
           dealflow and operational strategies. We are committed to investing in
           innovative startups with regional relevance in ASEAN (particularly
