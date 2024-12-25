@@ -11,13 +11,13 @@ export const aboutUsTeams: Team[] = [
     name: "Mark Koh",
     title: "CEO and Founder",
     linkedIn:
-      "https://www.linkedin.com/in/markgkoh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "https://www.linkedin.com/in/markgkoh",
   },
   {
-    avatar: "/ryan.png",
-    name: "Ryan Yap",
-    title: "Deal Flow Manager",
+    avatar: "/nuel.png",
+    name: "Nuel Idu",
+    title: "Community Manager",
     linkedIn:
-      "https://www.linkedin.com/in/ryan-yap-5b2205323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "https://www.linkedin.com/in/nuelidu",
   },
 ];
