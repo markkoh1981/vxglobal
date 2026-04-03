@@ -22,7 +22,7 @@ export const homeClients: Card[] = [
     category: "DevTools",
     description:
       "A web3 company providing infrastructure   and tools for efficient Web3 application   development, allowing Enterprises to   implement a Layer 1 private chain with just a  few simple API calls.",
-    link: "https://thnet.org",
+    link: "https://thxnet.org",
   },
   {
     logo: "/icons/ic_tpro.png",
@@ -53,6 +53,36 @@ export const homeClients: Card[] = [
 export const homePortfolios: Card[][] = [
   [
     {
+      logo: "/icons/ic_vxces.png",
+      name: "VXCES",
+      description:
+        "Curated tickets, drops, and experiences across Asia Pacific   — TCG conventions, Web3 summits, and collector culture events.",
+      link: "https://vxces.com",
+    },
+    {
+      logo: "/icons/ic_bodynetic.png",
+      name: "Bodynetic",
+      description:
+        "A painless world with better lifestyles and accessible   preventive solutions.",
+      link: "https://bodynetic.com",
+    },
+    {
+      logo: "/icons/ic_aim.png",
+      name: "Aim Production House",
+      description:
+        "A creative agency in Bandung dedicated to empowering local   talent and elevating the creative scene.",
+      link: "https://linktr.ee/aimdigital.id",
+    },
+    {
+      logo: "/icons/ic_megacorp.png",
+      name: "Megacorp Trading Card Game",
+      description:
+        "A cyberpunk-themed card game that immerses players in a   complex world of genetically modified beings, powerful psychics",
+      link: "https://megacorptcg.com",
+    },
+  ],
+  [
+    {
       logo: "/icons/ic_fryingfish.png",
       name: "Frying Fish Club (Exited)",
       description:
@@ -61,47 +91,10 @@ export const homePortfolios: Card[][] = [
     },
     {
       logo: "/icons/ic_palinggaming.png",
-      name: "Paling Gaming",
+      name: "Paling Gaming (Exited)",
       description:
         "Premium furniture manufacturer and brand based in   Indonesia",
       link: "https://palinggaming.com",
-    },
-    {
-      logo: "/icons/ic_bodynetic.png",
-      name: "Bodynetic",
-      description:
-        "A painless world with better lifestyles and accessible   preventive solutions.",
-      link: "https://bodynetic.co",
-    },
-    {
-      logo: "/icons/ic_aim.png",
-      name: "Aim Production House",
-      description:
-        "A creative agency in Bandung dedicated to empowering local   talent and elevating the creative scene.",
-      link: "https://aimph.co",
-    },
-  ],
-  [
-    {
-      logo: "/icons/ic_megacorp.png",
-      name: "Megacorp Trading Card Game",
-      description:
-        "A cyberpunk-themed card game that immerses players in a   complex world of genetically modified beings, powerful psychics",
-      link: "https://megacorptcg.com",
-    },
-    {
-      logo: "/icons/ic_vxces.png",
-      name: "VXCES",
-      description:
-        "Curated tickets, drops, and experiences across Asia Pacific   — TCG conventions, Web3 summits, and collector culture events.",
-      link: "https://vxces.com",
-    },
-    {
-      logo: "/icons/ic_dunno.png",
-      name: "dunno.ventures",
-      description:
-        "Entrepreneur in Residence — supporting early-stage founders   with hands-on guidance, network access, and go-to-market strategy.",
-      link: "https://dunno.ventures",
     },
   ],
 ];
@@ -121,7 +114,7 @@ export const homeWeb3: Card[] = [
     category: "Finance",
     description:
       "A DeFi-focused company offering transparent yield farming   through its Monstro's Farm program",
-    link: "https://monstro.fun",
+    link: "https://monstrodefi.com",
   },
 ];
 
@@ -141,5 +134,10 @@ export const homePartners: Omit<Card, "description" | "category">[] = [
     alias: "https://arcaccelerator.com",
     link: "https://www.aupptechcenter.com/what-is-arc-start-up-accelerator/",
     logo: "/icons/ic_arc.png",
+  },
+  {
+    name: "dunno.ventures — Entrepreneur in Residence",
+    link: "https://dunno.ventures",
+    logo: "/icons/ic_dunno.png",
   },
 ];

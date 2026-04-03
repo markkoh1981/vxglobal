@@ -12,7 +12,7 @@ const [visible, container] = useVisible();
       <h1 class="text-base font-bold md:text-lg xl:text-2xl">Partners</h1>
     </div>
     <div
-      class="flex flex-col gap-y-4 overflow-x-scroll bg-small-parallelogram snap-x overflow-y-hidden md:px-8 lg:px-16 md:flex-row md:gap-x-8 2xl:px-0 xl:grid xl:grid-cols-3"
+      class="flex flex-col gap-y-4 overflow-x-scroll bg-small-parallelogram snap-x overflow-y-hidden md:px-8 lg:px-16 md:flex-row md:gap-x-8 2xl:px-0 xl:grid xl:grid-cols-4"
     >
       <CubeEffect
         v-for="(partner, index) in homePartners"
@@ -23,7 +23,11 @@ const [visible, container] = useVisible();
         "
         class="flex flex-col space-y-4 p-8 md:h-50 md:text-black md:min-w-sm 2xl:min-w-sm"
       >
-        <div class="flex-1 flex items-center justify-center space-x-2">
+        <NuxtLink
+          :href="partner.link"
+          target="_blank"
+          class="flex-1 flex items-center justify-center space-x-2 hover:opacity-80 transition-opacity"
+        >
           <NuxtImg
             :src="partner.logo"
             :alt="partner.name"
@@ -35,7 +39,7 @@ const [visible, container] = useVisible();
             class="flex-1 llt-md:leading-relaxed lt-md:text-sm md:text-base lg:text-xl 3xl:text-2xl leading-loose"
             v-html="partner.name"
           />
-        </div>
+        </NuxtLink>
         <NuxtLink
           :href="partner.link"
           target="_blank"

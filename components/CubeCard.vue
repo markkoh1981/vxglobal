@@ -13,7 +13,7 @@ defineProps<Card & { linkClass?: string }>();
           width="48"
           height="48"
           fit="inside"
-          class="lt-md:w-10 lt-md:h-10 rounded-full"
+          class="lt-md:w-10 lt-md:h-10 rounded-full p-1 object-contain"
         />
         <p class="text-sm font-bold md:text-base xl:text-xl">{{ name }}</p>
       </div>

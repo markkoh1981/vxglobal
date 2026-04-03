@@ -18,7 +18,7 @@ const [visible, container] = useVisible();
         class="flex flex-col space-y-4"
       >
         <h1 class="lt-md:text-base font-bold lt-xl:text-lg xl:text-2x">
-          Our Portofolio
+          Our Portfolio
         </h1>
         <p class="lt-md:leading-relaxed leading-loose 2xl:text-2xl">
           VX GLOBAL has made targeted investments in three categories. Brick and
