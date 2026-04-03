@@ -42,7 +42,7 @@ defineProps<Props>();
               />
             </div>
           </div>
-          <p class="lt-md:leading-relaxed leading-loose">
+          <p class="lt-md:leading-relaxed leading-loose text-gold-dim">
             Connecting Capital, Talent, and Opportunity
           </p>
         </div>
@@ -51,8 +51,9 @@ defineProps<Props>();
             href="https://forms.gle/ow74aDCWgf59KKZ37"
             target="_blank"
           >
-            <img
+            <NuxtImg
               src="/icons/ic_book_a_session.png"
+              loading="eager"
               class="w-46 lt-md:w-40 cursor-pointer 2xl:w-48 4xl:w-64"
             />
           </NuxtLink>
@@ -60,8 +61,9 @@ defineProps<Props>();
             href="https://forms.gle/K2LTDFmV19RCkriC7"
             target="_blank"
           >
-            <img
+            <NuxtImg
               src="/icons/ic_seeking_funding.png"
+              loading="eager"
               class="w-46 lt-md:w-40 cursor-pointer 2xl:w-48 4xl:w-64"
             />
           </NuxtLink>

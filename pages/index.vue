@@ -5,7 +5,7 @@ import LayoutHeader from "~/components/LayoutHeader.vue";
 </script>
 
 <template>
-  <main>
+  <main class="noise">
     <div class="relative flex flex-col overflow-x-hidden">
       <div class="relative flex-1 flex flex-col space-y-8 bg-spiral-and-block">
         <LayoutHeader />

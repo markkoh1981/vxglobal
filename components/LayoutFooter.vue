@@ -49,7 +49,7 @@ const [visible, container] = useVisible();
             <NuxtLink
               v-for="navigation in layoutNavigations"
               :href="navigation.link"
-              class="py-2 text-white/75 hover:text-white text-nowrap lt-md:leading-relaxed lt-md:text-xs md:text-base lg:text-xl 3xl:text-2xl leading-loose"
+              class="py-2 text-white/75 hover:text-gold transition-colors text-nowrap lt-md:leading-relaxed lt-md:text-xs md:text-base lg:text-xl 3xl:text-2xl leading-loose"
               >{{ navigation.name }}</NuxtLink
             >
           </div>
@@ -67,7 +67,7 @@ const [visible, container] = useVisible();
               v-for="navigation in layoutSocials"
               :href="navigation.link"
               target="_blank"
-              class="py-2 text-white/75 hover:text-white text-nowrap lt-md:leading-relaxed lt-md:text-xs md:text-base lg:text-xl 3xl:text-2xl leading-loose"
+              class="py-2 text-white/75 hover:text-gold transition-colors text-nowrap lt-md:leading-relaxed lt-md:text-xs md:text-base lg:text-xl 3xl:text-2xl leading-loose"
               >{{ navigation.name }}</NuxtLink
             >
           </div>
@@ -78,10 +78,10 @@ const [visible, container] = useVisible();
       :class="visible ? 'animate-slide-in-up visible' : 'invisible'"
       class="flex flex-col space-y-8"
     >
-      <hr class="border-white/50" />
+      <hr class="border-gold-dim/50" />
       <div class="flex flex-col">
-        <p class="text-white/50 text-center">
-          Copyright © 2011-2024 VX Global Pte Ltd
+        <p class="text-muted text-center">
+          Copyright © 2011-2026 VX Global Pte Ltd
         </p>
       </div>
     </div>

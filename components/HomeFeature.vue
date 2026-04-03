@@ -70,7 +70,7 @@ const [visible, container] = useVisible();
                   />
                 </ul>
               </div>
-              <hr class="border-primary lt-md:hidden" />
+              <hr class="border-gold-dim lt-md:hidden" />
             </div>
           </div>
         </div>

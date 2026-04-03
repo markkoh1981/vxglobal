@@ -45,6 +45,8 @@ const [visible, container] = useVisible();
     >
       <NuxtImg
         src="/illustrations/il_coins.png"
+        loading="lazy"
+        quality="70"
         class="-rotate-5 object-contain w-full h-full"
       />
     </div>

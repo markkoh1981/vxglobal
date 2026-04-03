@@ -32,15 +32,31 @@ export const homeClients: Card[] = [
       "A Polish origin Web3 consultancy which  specializes in using multiple AI agents to   simulate digital asset price action.",
     link: "https://tpro.network",
   },
+  {
+    logo: "/icons/ic_elephants.png",
+    name: "Elephants.inc",
+    category: "Business Development",
+    description:
+      "Strategic business development partnership   focused on scaling operations and market   expansion across the region.",
+    link: "https://elephants.inc",
+  },
+  {
+    logo: "/icons/ic_asgaardian.png",
+    name: "Asgaardian",
+    category: "Business Development",
+    description:
+      "Business development and regional expansion   advisory, supporting growth strategies across   Southeast Asia and beyond.",
+    link: "https://asgaardian.com",
+  },
 ];
 
 export const homePortfolios: Card[][] = [
   [
     {
       logo: "/icons/ic_fryingfish.png",
-      name: "Frying Fish Club",
+      name: "Frying Fish Club (Exited)",
       description:
-        "Fusion food restaurant chain with 5 outlets in 3 countries   offering Japanese-inspired fish & chips, integrating NFTs",
+        "Fusion food restaurant chain formerly operating 5 outlets   across 3 countries, offering Japanese-inspired fish & chips.",
       link: "https://fryingfish.club",
     },
     {
@@ -73,6 +89,20 @@ export const homePortfolios: Card[][] = [
         "A cyberpunk-themed card game that immerses players in a   complex world of genetically modified beings, powerful psychics",
       link: "https://megacorptcg.com",
     },
+    {
+      logo: "/icons/ic_vxces.png",
+      name: "VXCES",
+      description:
+        "Curated tickets, drops, and experiences across Asia Pacific   — TCG conventions, Web3 summits, and collector culture events.",
+      link: "https://vxces.com",
+    },
+    {
+      logo: "/icons/ic_dunno.png",
+      name: "dunno.ventures",
+      description:
+        "Entrepreneur in Residence — supporting early-stage founders   with hands-on guidance, network access, and go-to-market strategy.",
+      link: "https://dunno.ventures",
+    },
   ],
 ];
 
@@ -102,7 +132,7 @@ export const homePartners: Omit<Card, "description" | "category">[] = [
     logo: "/icons/ic_offchain.png",
   },
   {
-    name: "CEEC (Central and East European   Chamber of Commerce in Singapore)",
+    name: "CEEC (Central and East European   Chamber of Commerce in Singapore) — Secretary General, 7th Term (AGM 2026)",
     link: "https://ceec.org.sg",
     logo: "/icons/ic_ceec.png",
   },

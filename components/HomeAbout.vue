@@ -35,8 +35,8 @@ const [visible, container] = useVisible();
         </div>
         <div class="self-start flex flex-col">
           <NuxtLink to="/about-us">
-            <ButtonOutlineFill class="bg-primary/50 md:px-8 md:py-4">
-              <p class="text-white/70 p-4">Read more</p>
+            <ButtonOutlineFill class="bg-gold/20 border-gold-dim md:px-8 md:py-4">
+              <p class="text-gold p-4">Read more</p>
             </ButtonOutlineFill>
           </NuxtLink>
         </div>

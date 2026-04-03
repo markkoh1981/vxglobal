@@ -11,14 +11,27 @@ export default defineConfig({
   transformers: [transformerDirectives()],
   theme: {
     fontFamily: {
-      sans: ["Poppins"],
+      sans: ["Chakra+Petch"],
       inter: ["Noto+Sans"],
       clash: ["Clash+Display"],
       outfit: ["Outfit"],
       tommy: ["Made+Tommy"],
+      cormorant: ["Cormorant+Garamond"],
+      mono: ["Space+Mono"],
     },
     colors: {
-      primary: "#A3A3A3",
+      primary: "#c9a84c",
+      gold: {
+        DEFAULT: "#c9a84c",
+        dim: "#8a6f30",
+        bright: "#e8c96a",
+      },
+      surface: "#111111",
+      border: {
+        DEFAULT: "#1e1e1e",
+        bright: "#2a2a2a",
+      },
+      muted: "#6a6460",
     },
     screens: {
       sm: "640px",
