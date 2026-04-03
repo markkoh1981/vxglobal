@@ -20,4 +20,16 @@ export const aboutUsTeams: Team[] = [
     linkedIn:
       "https://www.linkedin.com/in/nuelidu",
   },
+  {
+    avatar: "/modred.png",
+    name: "Modred Yang",
+    title: "TCG Domain Expert and Project Manager",
+    linkedIn: "",
+  },
+  {
+    avatar: "/nacho.png",
+    name: "Nacho",
+    title: "Chief Wellbeing Officer",
+    linkedIn: "",
+  },
 ];

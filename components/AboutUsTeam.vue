@@ -32,6 +32,8 @@ const [visible, container] = useVisible();
               width="256"
               height="256"
               fit="inside"
+              loading="lazy"
+              quality="80"
               class="w-40 xl:w-64"
             />
           </div>
@@ -40,12 +42,13 @@ const [visible, container] = useVisible();
               <h1 class="font-medium">{{ team.name }}</h1>
 
               <NuxtLink
+                v-if="team.linkedIn"
                 :href="team.linkedIn"
                 target="_blank"
                 class="p-2"
               >
                 <div
-                  class="i-fa-brands:linkedin hover:text-white/50 lt-md:text-xl"
+                  class="i-fa-brands:linkedin hover:text-gold transition-colors lt-md:text-xl"
                 />
               </NuxtLink>
             </div>
