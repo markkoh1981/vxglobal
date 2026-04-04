@@ -14,7 +14,7 @@ const [visible, container] = useVisible();
       </div>
       <div
         ref="container"
-        class="flex space-x-16 items-center justify-center"
+        class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4 justify-items-center px-4 md:px-8"
       >
         <div
           v-for="team in aboutUsTeams"
